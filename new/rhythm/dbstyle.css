@@ -1,0 +1,184 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Behind other content */
+}
+
+.background-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#0af0f8, #026a7c);
+}
+
+.navbar {
+    background-color: #000000ce;
+    border-radius: 15px;
+    height: 98vh;
+    left: 0;
+    top: 0;
+    margin-top: 1vh;
+    margin-left: 1vw;
+    width: 5vw;
+    position: fixed;
+    text-align: center;
+    scrollbar-width: thin;
+}
+
+.navbar a {
+    color: white;
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.navbar a.active {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column; /* Display children in a column */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    height: 98vh;
+    margin-left: 100px; /* Same as the width of the navbar */
+    width: calc(100vw - 100px); /* Adjust width to accommodate navbar */
+    display: block;
+}
+
+
+.dashboard .dashboardcards {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    height: 98vh;
+    left: 0;
+    top: 0;
+    margin-top: 1vh;
+    margin-left: 7vw;
+    width: 92vw;
+    position: fixed;
+    text-align: center;
+    scrollbar-width: thin;
+}
+
+.cards {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px; /* Add space between navbar and cards */
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    margin-left: 6%;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Display icon and caption in a column */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 150px; /* Set the width of the card */
+    height: 150px; /* Set the height of the card to make it a square */
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.card:hover {
+    background-color: #000;
+    color: white;
+}
+
+.card i {
+    font-size: 24px;
+    margin-bottom: 10px; /* Space between icon and caption */
+    text-decoration: none;
+}
+
+.card p {
+    margin: 0;
+    text-decoration: none;
+}
+.cards a .card{
+    color: black;
+    text-decoration: none !important;
+    background-color: white;
+}
+.cards a{
+    color: black;
+    text-decoration: none !important;
+    background-color: white;
+}
+.cards a .card:hover{
+    color: white;
+    text-decoration: none !important;
+    background-color: black;
+}
+.user-info {
+        background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        border-radius: 15px;
+        padding: 20px;
+        text-align: center;
+        margin-top: 20px; /* Add space between cards and userinfo */
+        width: 85%;
+        margin-left: 6%;
+}
+
+.profile img {
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.profile p {
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
