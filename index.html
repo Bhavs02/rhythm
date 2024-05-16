@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rhythm Tourism | Cabs, Buses, Corporte Servcices, Tours and Packages | Best Tourism Services in Ahmedabad </title>
+        <link rel="icon" type="image/x-icon" href="Rhythm_Cab_L_CF_TB ICO.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="hero">
+
+    <video autoplay loop muted playsinline class="ab-back-video">
+      <source src="IMG_2463.mp4" type="video/mp4">
+    </video>
+    
+          <div class="topnav" id="myTopnav">
+            <nav><img src="Rhythm_Cab_L_FW_TB.png" id="logo" onmouseover="document.getElementById('logo').src='Rhythm_Cab_L_CF_TB.png'" onmouseout="document.getElementById('logo').src='Rhythm_Cab_L_FW_TB.png'">
+            <a href="#" class="active" id="first">Home</a>
+            <a href="About.html">About</a>
+            <a href="Contact.html">Visit Us</a>
+            <a href="Contact.html">Inquiry</a>
+            <a href="coming-soon.html" class="last">Admin</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a></nav>
+          </div>
+          <div class="content">
+            <h1 class="text first-text">RHYTHM TOURISM</h1>
+            <center><a href="book.html" class="text sec-text">Cabs</a></center>
+          </div>
+        </div>
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+
+          const text = document.querySelector(".sec-text");
+
+const textLoad = () => {
+    setTimeout(() => {
+        text.textContent = "Cabs";
+    }, 0);
+    setTimeout(() => {
+        text.textContent = "Buses";
+    }, 4000);
+    setTimeout(() => {
+        text.textContent = "Tours and Packages";
+    }, 8000);
+    setTimeout(() => {
+        text.textContent = "Corporate Services";
+    }, 12000); //1s = 1000 milliseconds
+}
+
+textLoad();
+setInterval(textLoad, 16000);
+</script>    
+          </script>
+    </body>
+</html>

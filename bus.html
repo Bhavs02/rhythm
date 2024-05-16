@@ -1,0 +1,2054 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"  rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Bus Bookings | Rhythm Group | Ahmedabad to Anywhere | One-Way and Rounded-Way</title>
+    <link rel="icon" type="image/x-icon" href="Rhythm_Cab_L_CF_TB ICO.png">
+    <link rel="stylesheet" href="book-style.css" type="text/css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/b80b7dd1be.css" crossorigin="anonymous">
+    <style>
+      
+      form{
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+      }
+      select{
+          background-color: #002060;
+          color: white;
+          border: dotted 1px;
+          border-radius: 10vh;
+          width: 50vw;
+          height: 5vh;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          transition: 0.3s;
+          margin: 0vh 5vw 1vh;
+          font-weight: bold ;
+      }
+      select:hover{
+        color:rgb(240, 243, 25);
+          border: groove;
+          width: 52vw;
+          height: 6vh;
+      }
+      
+      table{
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          border: groove 3px; 
+          border-radius: 5px;
+          margin-bottom: 5vh;
+      }
+  
+      tr, td, th{
+          border: groove 3px;
+          border-radius: 5px;
+          width: 30vw;
+          margin: 5vh 5vw;
+      }
+  
+      #choose{
+  background: #5F433A;
+  background: -webkit-linear-gradient(top left, #5F433A, #A97169);
+  background: -moz-linear-gradient(top left, #5F433A, #A97169);
+  background: linear-gradient(to bottom right, #5F433A, #A97169);
+  border-radius: 2vw;
+  margin: 0 10vw;
+  margin-top: 5vh;
+  border: white solid 1px;
+      }
+  
+      .aodjod legend{
+          text-align: left;
+          margin-left: 5vw;
+          padding-left: 2vw; padding-right: 2vw;
+          color: #fff;
+      }
+  
+      .aodjod label{
+          margin-top: 5vh;
+          padding-top: 5vh;
+          margin-bottom: 5vh;
+          color: #fff;
+      }
+  
+      .submit{
+          padding: 1vh 3vw;
+          margin-bottom: 3vh;
+          border-radius: 5vh;
+          border: transparent;
+          transition: 0.3s;
+          background-color: white;
+          color: #000;
+  
+      }
+      .submit:hover{
+          background-color: rgb(149, 176, 202);
+      }
+  
+      .instructionTxt{
+          list-style: none;
+          color: rgb(255, 201, 130);
+      }
+  
+      .note{
+          margin: 5vh 20vw;
+      }
+  
+      .book-button{
+          background-color: #ffc000;
+          width: 20vw;
+          padding: 1vh 1vw;
+          border-radius: 2vw;
+          border: transparent;
+          transition: 0.3s;
+  
+      }
+  
+      .book-button:hover{
+          background-color: black;
+          width: 12vw;
+          padding: 2vh 1vw;
+          color: white;
+          margin-bottom: 5vh;
+      }
+      .final-booking{
+          color: black;
+          margin: 5vh 10vw;
+          padding: 5vh 10vw;
+      }
+      .final-booking input{
+              background-color: #ffc000;
+              color: #000;
+              border-radius: 5vw;
+              width: 20vw;
+              padding: 1vh 2vw;
+          }
+  
+          .tel{
+              margin-bottom: 2vh;
+          }
+  
+      .final-booking label{
+          color: #000;
+      }
+          .subm{
+              background-color: aquamarine;
+              transition: 0.3s;
+          }
+  
+          .subm:hover{
+              background-color: #000;
+              color: white;
+              width: 22vw;
+              padding: 2vh 2vw;
+          }
+  .icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  
+  .whatsapp {
+    background: #37df5e;
+    color: white;
+  }
+  
+  .phone {
+    background: #5368e0;
+    color: rgb(255, 255, 255);
+  }
+
+  @media (min-aspect-ratio: 16/9){
+    .estchatab{
+      
+      width: 27vw; 
+      font-size: 1vw;
+    }
+
+}
+
+@media (max-aspect-ratio: 16/9){
+    .estchatab{
+      width: 70vw; 
+      font-size: 3.2vw; 
+    }
+}
+
+
+  
+      </style>
+</head>
+
+
+<body style="background-image: linear-gradient(#cc00cc, #002060); color: #fff;background-size: 100%; height: 50%; width: auto;" >
+
+      <header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <img src="Rhythm_Cab_L_FW_TB.png" width="50px">
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a id="about" class="mr-5 hover:text-gray-900" href="About.html" style="color: #fff; transition: 0.4s;" onmouseover="document.getElementById('about').style.color = '#002060'" onmouseout="document.getElementById('about').style.color = 'white'">About US</a>
+        <a id="contact" class="mr-5 hover:text-gray-900" href="Contact.html" style="color: #fff;" onmouseover="document.getElementById('contact').style.color = '#002060'" onmouseout="document.getElementById('contact').style.color = 'white'"> Contact</a>
+      </nav><a href="index.html">
+      <button id="home-button" class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0" style="color: #cc00cc; transition: 0.3s;" onmouseover="document.getElementById('home-button').style.backgroundColor='#002060'" onmouseout="document.getElementById('home-button').style.backgroundColor='#fff'">Home
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button></a>
+    </div><br><br>
+    <div>
+      <h2 align="center" style="color: #fff">Click the box to book a services</h2>
+    </div>
+  </header>   
+  <form action="#bill" class="aodjod"><fieldset id="choose">
+    <h1 style="color: #fff">Instructions</h1>
+    <ol type="1" class="instructionTxt">
+        <li>1. Choose city and destination as per your requirement</li>
+        <li>2. The main cities of India are included in the list</li>
+        <li>3. You can also type your city name selecting the existing</li>
+        <li>4. Choose the nearest city to you if your city is not in the list</li>
+        <li>5. This list is just for the pricing information. This is not the final booking</li>
+    </ol>
+    <legend>Tempo Mini Buses and Buses</legend>
+    <label>Your City</label><br>
+    <select id="from" value="Ahmedabad" readonly><option>Ahmedabad</option></select>
+    <br>
+<br>
+    <label>Destination</label><br>
+    <select id="to"><option>	Abohar	</option>
+        <option>	Abu	</option>
+        <option>	Addanki	</option>
+        <option>	Adilabad	</option>
+        <option>	Adoni	</option>
+        <option>	Agartala	</option>
+        <option>	Agra	</option>
+        <option>	Ahmadnagar	</option>
+        <option>	Ahmedabad	</option>
+        <option>	Aizawl	</option>
+        <option>	Ajmer	</option>
+        <option>	Akola	</option>
+        <option>	Aligarh	</option>
+        <option>	Alipur Duar	</option>
+        <option>	Allahabad	</option>
+        <option>	Alleppey	</option>
+        <option>	Alwar	</option>
+        <option>	Amalapuram	</option>
+        <option>	Ambala	</option>
+        <option>	Amravati	</option>
+        <option>	Amritsar	</option>
+        <option>	Amudalavalasa	</option>
+        <option>	Anakapalle	</option>
+        <option>	Anantapur	</option>
+        <option>	Angamali	</option>
+        <option>	Armur	</option>
+        <option>	Asansol	</option>
+        <option>	Aurangabad	</option>
+        <option>	Aurangabad	</option>
+        <option>	Badvel	</option>
+        <option>	Baharampur	</option>
+        <option>	Bahraigh	</option>
+        <option>	Baidyabati	</option>
+        <option>	Bali	</option>
+        <option>	Balurghat	</option>
+        <option>	Bandipura	</option>
+        <option>	Bangalore	</option>
+        <option>	Bangaon	</option>
+        <option>	Bankura	</option>
+        <option>	Bansbaria	</option>
+        <option>	Bapatla	</option>
+        <option>	Baramula	</option>
+        <option>	Barasat	</option>
+        <option>	Barddhaman	</option>
+        <option>	Bareilly	</option>
+        <option>	Basirhat	</option>
+        <option>	Begusarai	</option>
+        <option>	Belampalli	</option>
+        <option>	Belgaum	</option>
+        <option>	Bellary	</option>
+        <option>	Bezwada	</option>
+        <option>	Bhadreswar	</option>
+        <option>	Bhagalpur	</option>
+        <option>	Bhainsa	</option>
+        <option>	Bharatpur	</option>
+        <option>	Bhatpara	</option>
+        <option>	Bhavnagar	</option>
+        <option>	Bhayandar	</option>
+        <option>	Bhilai	</option>
+        <option>	Bhilwara	</option>
+        <option>	Bhimavaram	</option>
+        <option>	Bhimunipatnam	</option>
+        <option>	Bhiwandi	</option>
+        <option>	Bhiwani	</option>
+        <option>	Bhopal	</option>
+        <option>	Bhubaneshwar	</option>
+        <option>	Bhuj	</option>
+        <option>	Bhusaval	</option>
+        <option>	Bidar	</option>
+        <option>	Bijapur	</option>
+        <option>	Bikaner	</option>
+        <option>	Bilaspur	</option>
+        <option>	Bobbili	</option>
+        <option>	Bodhan	</option>
+        <option>	Bodupal	</option>
+        <option>	Brahmapur	</option>
+        <option>	Budaun	</option>
+        <option>	Bulandshahr	</option>
+        <option>	Burhanpur	</option>
+        <option>	Calicut	</option>
+        <option>	Cawnpore	</option>
+        <option>	Chakradharpur	</option>
+        <option>	Champdani	</option>
+        <option>	Chanda	</option>
+        <option>	Chandannagar	</option>
+        <option>	Chandigarh	</option>
+        <option>	Channarayapatna	</option>
+        <option>	Chennai	</option>
+        <option>	Chicacole	</option>
+        <option>	Chilakalurupet	</option>
+        <option>	Chimakurti	</option>
+        <option>	Chinchvad	</option>
+        <option>	Chirala	</option>
+        <option>	Chittaurgarh	</option>
+        <option>	Chittoor	</option>
+        <option>	Coimbatore	</option>
+        <option>	Conjeeveram	</option>
+        <option>	Cuddalore	</option>
+        <option>	Cuddapah	</option>
+        <option>	Curchorem	</option>
+        <option>	Cuttack	</option>
+        <option>	Dam Dam	</option>
+        <option>	Daman	</option>
+        <option>	Darjeeling	</option>
+        <option>	Davangere	</option>
+        <option>	Dehra Dun	</option>
+        <option>	Delhi	</option>
+        <option>	Deo	</option>
+        <option>	Devarkonda	</option>
+        <option>	Dhanbad	</option>
+        <option>	Dharmavaram	</option>
+        <option>	Dholka	</option>
+        <option>	Dhulia	</option>
+        <option>	Dibrugarh	</option>
+        <option>	Dindigul	</option>
+        <option>	Dispur	</option>
+        <option>	Diu	</option>
+        <option>	Drug	</option>
+        <option>	Durgapur	</option>
+        <option>	Dwarka	</option>
+        <option>	Ellore	</option>
+        <option>	Emmiganur	</option>
+        <option>	Erode	</option>
+        <option>	Etawah	</option>
+        <option>	Faridabad	</option>
+        <option>	Fatehpur	</option>
+        <option>	Fatehpur Sikri	</option>
+        <option>	Firozabad	</option>
+        <option>	Fyzabad	</option>
+        <option>	Gadwal	</option>
+        <option>	Gangtok	</option>
+        <option>	Gauripur	</option>
+        <option>	Gaya	</option>
+        <option>	Ghandinagar	</option>
+        <option>	Ghaziabad	</option>
+        <option>	Giddalur	</option>
+        <option>	Godhra	</option>
+        <option>	Gorakhpur	</option>
+        <option>	Gudivada	</option>
+        <option>	Gulbarga	</option>
+        <option>	Guntakal	</option>
+        <option>	Guntur	</option>
+        <option>	Gurgaon	</option>
+        <option>	Guwahati	</option>
+        <option>	Gwalior	</option>
+        <option>	Habra	</option>
+        <option>	Haldia	</option>
+        <option>	Halisahar	</option>
+        <option>	Handwara	</option>
+        <option>	Haora	</option>
+        <option>	Hapur	</option>
+        <option>	Haripur	</option>
+        <option>	Hassan	</option>
+        <option>	Hathras	</option>
+        <option>	Hindupur	</option>
+        <option>	Hisar	</option>
+        <option>	Hospet	</option>
+        <option>	Hubli	</option>
+        <option>	Hugli	</option>
+        <option>	Hyderabad	</option>
+        <option>	Ichalkaranji	</option>
+        <option>	Imphal	</option>
+        <option>	Indore	</option>
+        <option>	Ingraj Bazar	</option>
+        <option>	Itanagar	</option>
+        <option>	Jabalpur	</option>
+        <option>	Jaggayyapeta	</option>
+        <option>	Jagtial	</option>
+        <option>	Jaipur	</option>
+        <option>	Jaisalmer	</option>
+        <option>	Jalandhar	</option>
+        <option>	Jalgaon	</option>
+        <option>	Jalor	</option>
+        <option>	Jalpaiguri	</option>
+        <option>	Jammalamadugu	</option>
+        <option>	Jammu	</option>
+        <option>	Jamnagar	</option>
+        <option>	Jamshedpur	</option>
+        <option>	Jamuria	</option>
+        <option>	Jangaon	</option>
+        <option>	Jasdan	</option>
+        <option>	Jatani	</option>
+        <option>	Jaunpur	</option>
+        <option>	Jaynagar-Majilpur	</option>
+        <option>	Jhansi	</option>
+        <option>	Jodhpur	</option>
+        <option>	Jorhat	</option>
+        <option>	Junnar	</option>
+        <option>	Kadiri	</option>
+        <option>	Kagaznagar	</option>
+        <option>	Kairana	</option>
+        <option>	Kakinada	</option>
+        <option>	Kalyan	</option>
+        <option>	Kalyani	</option>
+        <option>	Kamareddipet	</option>
+        <option>	Kamarhati	</option>
+        <option>	Kanchrapara	</option>
+        <option>	Kandukur	</option>
+        <option>	Karimnagar	</option>
+        <option>	Karnal	</option>
+        <option>	Karur	</option>
+        <option>	Kavali	</option>
+        <option>	Kavaratti	</option>
+        <option>	Khajuraho	</option>
+        <option>	Khambhat	</option>
+        <option>	Khammam	</option>
+        <option>	Kharagpur	</option>
+        <option>	Khardah	</option>
+        <option>	Khed Brahma	</option>
+        <option>	Kochi	</option>
+        <option>	Kodaikanal	</option>
+        <option>	Kohima	</option>
+        <option>	Koilkuntla	</option>
+        <option>	Kolar	</option>
+        <option>	Kolhapur	</option>
+        <option>	Kolkata	</option>
+        <option>	Koratla	</option>
+        <option>	Kota	</option>
+        <option>	Kothapet	</option>
+        <option>	Kottagudem	</option>
+        <option>	Kovvur	</option>
+        <option>	Krishnanagar	</option>
+        <option>	Kulgam	</option>
+        <option>	Kulti	</option>
+        <option>	Kumbakonam	</option>
+        <option>	Kurnool	</option>
+        <option>	Latur	</option>
+        <option>	Lucknow	</option>
+        <option>	Ludhiana	</option>
+        <option>	Macherla	</option>
+        <option>	Machilipatnam	</option>
+        <option>	Madanapalle	</option>
+        <option>	Madhyamgram	</option>
+        <option>	Madurai	</option>
+        <option>	Mahbubnagar	</option>
+        <option>	Mahesana	</option>
+        <option>	Maihar	</option>
+        <option>	Malaut	</option>
+        <option>	Malegaon	</option>
+        <option>	Mancheral	</option>
+        <option>	Mandamari	</option>
+        <option>	Mandapeta	</option>
+        <option>	Mandsaur	</option>
+        <option>	Mandya	</option>
+        <option>	Mangalagiri	</option>
+        <option>	Mangalore	</option>
+        <option>	Mangur	</option>
+        <option>	Markapur	</option>
+        <option>	Mathura	</option>
+        <option>	Mauli	</option>
+        <option>	Medinipur	</option>
+        <option>	Meerut	</option>
+        <option>	Metpalli	</option>
+        <option>	Mirzapur	</option>
+        <option>	Moradabad	</option>
+        <option>	Mumbai	</option>
+        <option>	Muzaffarnagar	</option>
+        <option>	Muzaffarpur	</option>
+        <option>	Mysore	</option>
+        <option>	Nagari	</option>
+        <option>	Nagercoil	</option>
+        <option>	Nagpur	</option>
+        <option>	Naihati	</option>
+        <option>	Naini Tal	</option>
+        <option>	Nalgonda	</option>
+        <option>	Nanded	</option>
+        <option>	Nandod	</option>
+        <option>	Nandyal	</option>
+        <option>	Narasannapeta	</option>
+        <option>	Narasapur	</option>
+        <option>	Narasaraopet	</option>
+        <option>	Nasik	</option>
+        <option>	Navadwip	</option>
+        <option>	Navsari	</option>
+        <option>	Negapatam	</option>
+        <option>	Nellore	</option>
+        <option>	New Delhi	</option>
+        <option>	Nidadavole	</option>
+        <option>	Nizamabad	</option>
+        <option>	Ongole	</option>
+        <option>	Ootacamund	</option>
+        <option>	Osmanabad	</option>
+        <option>	Palakollu	</option>
+        <option>	Palghat	</option>
+        <option>	Pali	</option>
+        <option>	Palmaner	</option>
+        <option>	Paloncha	</option>
+        <option>	Pamidi	</option>
+        <option>	Panaji	</option>
+        <option>	Panchkula	</option>
+        <option>	Panihati	</option>
+        <option>	Panipat	</option>
+        <option>	Parbhani	</option>
+        <option>	Pathanamthitta	</option>
+        <option>	Pathankot	</option>
+        <option>	Patiala	</option>
+        <option>	Patna	</option>
+        <option>	Pedana	</option>
+        <option>	Pilibhit	</option>
+        <option>	Pithapuram	</option>
+        <option>	Ponnuru	</option>
+        <option>	Porbandar	</option>
+        <option>	Port Blair	</option>
+        <option>	Proddatur	</option>
+        <option>	Puducherry	</option>
+        <option>	Pulivendla	</option>
+        <option>	Pune	</option>
+        <option>	Punganuru	</option>
+        <option>	Puri	</option>
+        <option>	Purnea	</option>
+        <option>	Puttur	</option>
+        <option>	Quilon	</option>
+        <option>	Raichur	</option>
+        <option>	Raiganj	</option>
+        <option>	Raipur	</option>
+        <option>	Rajahmundry	</option>
+        <option>	Rajaori	</option>
+        <option>	Rajapalaiyam	</option>
+        <option>	Rajgir	</option>
+        <option>	Rajkot	</option>
+        <option>	Rameswaram	</option>
+        <option>	Ramgundam	</option>
+        <option>	Rampur	</option>
+        <option>	Ranchi	</option>
+        <option>	Ratlam	</option>
+        <option>	Raurkela	</option>
+        <option>	Rayachoti	</option>
+        <option>	Repalle	</option>
+        <option>	Rishra	</option>
+        <option>	Rohtak	</option>
+        <option>	Saharanpur	</option>
+        <option>	Saharsa	</option>
+        <option>	Salem	</option>
+        <option>	Samalkot	</option>
+        <option>	Sambalpur	</option>
+        <option>	Sambhal	</option>
+        <option>	Sangli	</option>
+        <option>	Sannai	</option>
+        <option>	Sattenapalle	</option>
+        <option>	Saugor	</option>
+        <option>	Secunderabad	</option>
+        <option>	Shahjanpur	</option>
+        <option>	Shantipur	</option>
+        <option>	Shiliguri	</option>
+        <option>	Shillong	</option>
+        <option>	Shimla	</option>
+        <option>	Shimoga	</option>
+        <option>	Shrirampur	</option>
+        <option>	Shrirangapattana	</option>
+        <option>	Sihor	</option>
+        <option>	Sikar	</option>
+        <option>	Silchar	</option>
+        <option>	Silvassa	</option>
+        <option>	Sirsa	</option>
+        <option>	Sirsilla	</option>
+        <option>	Sitalpur	</option>
+        <option>	Solan	</option>
+        <option>	Solapur	</option>
+        <option>	Sonipat	</option>
+        <option>	Sopur	</option>
+        <option>	Srinagar	</option>
+        <option>	Surat	</option>
+        <option>	Suriapet	</option>
+        <option>	Tadepalle	</option>
+        <option>	Tadepallegudem	</option>
+        <option>	Tadpatri	</option>
+        <option>	Tanjore	</option>
+        <option>	Tanuku	</option>
+        <option>	Tenali	</option>
+        <option>	Tezpur	</option>
+        <option>	Thane	</option>
+        <option>	Thiruvananthapuram	</option>
+        <option>	Tinnevelly	</option>
+        <option>	Tirupati	</option>
+        <option>	Tiruppur	</option>
+        <option>	Tiruvannamalai	</option>
+        <option>	Titagarh	</option>
+        <option>	Tonk	</option>
+        <option>	Trichinopoly	</option>
+        <option>	Trichur	</option>
+        <option>	Tumkur	</option>
+        <option>	Tuni	</option>
+        <option>	Tuticorin	</option>
+        <option>	Udaipur	</option>
+        <option>	Udhampur	</option>
+        <option>	Udipi	</option>
+        <option>	Ujjain	</option>
+        <option>	Ulhasnagar	</option>
+        <option>	Uluberiya	</option>
+        <option>	Umaria	</option>
+        <option>	Uran	</option>
+        <option>	Vadodara	</option>
+        <option>	Valparai	</option>
+        <option>	Varanasi	</option>
+        <option>	Vellore	</option>
+        <option>	Venkatagiri	</option>
+        <option>	Vidisha	</option>
+        <option>	Vikarabad	</option>
+        <option>	Vinukonda	</option>
+        <option>	Vishakhapatnam	</option>
+        <option>	Vizianagaram	</option>
+        <option>	Vrindavan	</option>
+        <option>	Wanparti	</option>
+        <option>	Warangal	</option>
+        <option>	Yavatmal	</option>
+        <option>	Yellandu	</option>
+        
+</select>
+    <br><br>
+    <input class="submit" type="submit" value="View Amount" onclick="findDistance()">
+</fieldset>
+</form></div><br><center><div id="bill">
+  <table  cellspacing="10px">
+    <h1 class="billh1"><u>NOTE</u></h1>
+        <p class="note">
+            These prices are the estimated prices. Also the distance between two cities are estimated and machine-calculated. Long distances can vary a lot with the original distance. And the prices are calculated on the basis of distance.
+         </p>
+         <tr>
+            <th colspan="3">         
+                Estimated Charges per day
+            </th>
+         </tr>
+        <i>
+        <tr>
+            <td id="firstPbl">Estimated travel Kilometers</td>
+            <td id="firstAmt" colspan="2">Choose the cities above</td>
+        </tr>
+        <tr>
+            <td id="secPbl">Driver Allowance</td>
+            <td id="secAmt" colspan="2">300/-</td>
+        </tr>
+        <tr>
+            <td id="thirPbl">External Tolls (Estimated)</td>
+            <td id="thirAmt" colspan="2">--</td>
+        </tr>
+        <tr>
+            <td id="forPbl">Other Charges</td>
+            <td id="forAmt" colspan="2">500/-</td>
+        </tr>
+        <tr>
+            <td id="fifPbl">GST</td>
+            <td colspan="2">18%</td>
+        </tr>
+    
+    </i>
+    </table></center>
+<div>
+    <p class="data"></p>
+</div><br><br><a href="14s Tempo.html">
+<div class="single-service">
+  <div class="social">
+      <i class="fa-solid fa-bus-simple"></i></div>
+<span></span>
+   <h3>
+14 Seater Tempo</h3><center>
+<table class="estchatab" style="color: #002060; border-style: none; justify-content: center; align-items: center;">
+    
+  <tr>
+    <th>Payables</th>
+    <th>Amount</th>
+  </tr>
+  <tr>
+    <td>Travel Charges</td>
+    <td id="tc14">Choose the city above</td>
+  </tr>
+  <tr>
+    <td>GST(18%)</td>
+    <td id="gst14">Choose the cities above</td>
+  </tr>
+  <tr>
+    <td>Total Charges<abbr title="Including all the charges listed above"><i class='fa fa-info-circle' style='color: #002060; margin-left: 5px;'></i></abbr></td>
+    <td id="total14">Choose the city above</td>
+  </tr>
+</table></center>
+<a id="bookButton" href="14s Tempo.html" style="background-image: linear-gradient(#cc00cc, #002060); color: white; padding: 1vh 2vw; border-radius: 3vw; transition: 0.7s; margin-top: 0; width: 30vw;" onmouseover="document.getElementById('bookButton').style.backgroundImage = 'linear-gradient(#ffc000, #ffc111)'" onmouseout="document.getElementById('bookButton').style.backgroundImage = 'linear-gradient(#cc00cc, #002060)'">Book Now</a>
+</div></a><a href="17s Tempo.html">
+<div class="single-service">
+  <div class="social">
+      <i class="fa-solid fa-bus-simple"></i></div>
+<span></span>
+   <h3>17 Seater Tempo</h3>
+   <center>
+    <table class="estchatab" style="color: #002060; border-style: none; justify-content: center; align-items: center;">
+        
+      <tr>
+        <th>Payables</th>
+        <th>Amount</th>
+      </tr>
+      <tr>
+        <td>Travel Charges</td>
+        <td id="tc17">Choose the city above</td>
+      </tr>
+      <tr>
+        <td>GST(18%)</td>
+        <td id="gst17">Choose the cities above</td>
+      </tr>
+      <tr>
+        <td>Total Charges<abbr title="Including all the charges listed above"><i class='fa fa-info-circle' style='color: #002060; margin-left: 5px;'></i></abbr></td>
+        <td id="total17">Choose the city above</td>
+      </tr>
+    </table></center>
+    <a id="bookButton1" href="17s Tempo.html" style="background-image: linear-gradient(#cc00cc, #002060); color: white; padding: 1vh 2vw; border-radius: 3vw; transition: 0.7s; margin-top: 0; width: 30vw;" onmouseover="document.getElementById('bookButton1').style.backgroundImage = 'linear-gradient(#ffc000, #ffc111)'" onmouseout="document.getElementById('bookButton1').style.backgroundImage = 'linear-gradient(#cc00cc, #002060)'">Book Now</a>
+
+</div></a><a href="20s Tempo.html">
+<div class="single-service">
+  <div class="social">
+      <i class="fa-solid fa-bus-simple"></i></div>
+<span></span>
+   <h3>20 Seater Tempo</h3>
+   <center>
+    <table class="estchatab" style="color: #002060; border-style: none; justify-content: center; align-items: center;">
+        
+      <tr>
+        <th>Payables</th>
+        <th>Amount</th>
+      </tr>
+      <tr>
+        <td>Travel Charges</td>
+        <td id="tc20">Choose the city above</td>
+      </tr>
+      <tr>
+        <td>GST(18%)</td>
+        <td id="gst20">Choose the cities above</td>
+      </tr>
+      <tr>
+        <td>Total Charges<abbr title="Including all the charges listed above"><i class='fa fa-info-circle' style='color: #002060; margin-left: 5px;'></i></abbr></td>
+        <td id="total20">Choose the city above</td>
+      </tr>
+    </table></center>
+    <a id="bookButton2" href="20s Tempo.html" style="background-image: linear-gradient(#cc00cc, #002060); color: white; padding: 1vh 2vw; border-radius: 3vw; transition: 0.7s; margin-top: 0; width: 30vw;" onmouseover="document.getElementById('bookButton2').style.backgroundImage = 'linear-gradient(#ffc000, #ffc111)'" onmouseout="document.getElementById('bookButton2').style.backgroundImage = 'linear-gradient(#cc00cc, #002060)'">Book Now</a>
+  </div></a><a href="20mb.html">
+<div class="single-service" style="margin-top: 20px;">
+<div class="social">
+  <i class="fa-solid fa-bus-simple"></i></div>
+<span></span>
+<h3>20 Seater Mini Bus</h3>
+<center>
+  <table class="estchatab" style="color: #002060; border-style: none; justify-content: center; align-items: center;">
+      
+    <tr>
+      <th>Payables</th>
+      <th>Amount</th>
+    </tr>
+    <tr>
+      <td>Travel Charges</td>
+      <td id="tc20mb">Choose the city above</td>
+    </tr>
+    <tr>
+      <td>GST(18%)</td>
+      <td id="gst20mb">Choose the cities above</td>
+    </tr>
+    <tr>
+      <td>Total Charges<abbr title="Including all the charges listed above"><i class='fa fa-info-circle' style='color: #002060; margin-left: 5px;'></i></abbr></td>
+      <td id="total20mb">Choose the city above</td>
+    </tr>
+  </table></center>
+  <a id="bookButton3" href="20mb.html" style="background-image: linear-gradient(#cc00cc, #002060); color: white; padding: 1vh 2vw; border-radius: 3vw; transition: 0.7s; margin-top: 0; width: 30vw;" onmouseover="document.getElementById('bookButton3').style.backgroundImage = 'linear-gradient(#ffc000, #ffc111)'" onmouseout="document.getElementById('bookButton3').style.backgroundImage = 'linear-gradient(#cc00cc, #002060)'">Book Now</a>
+</div></a><a href="25mb.html">
+
+<div class="single-service" style="margin-top: 20px;">
+<div class="social">
+  <i class="fa-solid fa-bus-simple"></i></div>
+<span></span>
+<h3>25 Seater Mini Bus</h3>
+<center>
+  <table class="estchatab" style="color: #002060; border-style: none; justify-content: center; align-items: center;">
+      
+    <tr>
+      <th>Payables</th>
+      <th>Amount</th>
+    </tr>
+    <tr>
+      <td>Travel Charges</td>
+      <td id="tc25">Choose the city above</td>
+    </tr>
+    <tr>
+      <td>GST(18%)</td>
+      <td id="gst25">Choose the cities above</td>
+    </tr>
+    <tr>
+      <td>Total Charges<abbr title="Including all the charges listed above"><i class='fa fa-info-circle' style='color: #002060; margin-left: 5px;'></i></abbr></td>
+      <td id="total25">Choose the city above</td>
+    </tr>
+  </table></center>
+  <a id="bookButton5" href="25mb.html" style="background-image: linear-gradient(#cc00cc, #002060); color: white; padding: 1vh 2vw; border-radius: 3vw; transition: 0.7s; margin-top: 0; width: 30vw;" onmouseover="document.getElementById('bookButton5').style.backgroundImage = 'linear-gradient(#ffc000, #ffc111)'" onmouseout="document.getElementById('bookButton5').style.backgroundImage = 'linear-gradient(#cc00cc, #002060)'">Book Now</a>
+
+</div></a><a href="27mb.html">
+<div class="single-service" style="margin-top: 20px;">
+  <div class="social">
+    <i class="fa-solid fa-bus-simple"></i></div>
+  <span></span>
+  <h3>27 Seater Mini Bus</h3>
+  <center>
+    <table class="estchatab" style="color: #002060; border-style: none; justify-content: center; align-items: center;">
+        
+      <tr>
+        <th>Payables</th>
+        <th>Amount</th>
+      </tr>
+      <tr>
+        <td>Travel Charges</td>
+        <td id="tc27">Choose the city above</td>
+      </tr>
+      <tr>
+        <td>GST(18%)</td>
+        <td id="gst27">Choose the cities above</td>
+      </tr>
+      <tr>
+        <td>Total Charges<abbr title="Including all the charges listed above"><i class='fa fa-info-circle' style='color: #002060; margin-left: 5px;'></i></abbr></td>
+        <td id="total27">Choose the city above</td>
+      </tr>
+    </table></center>  
+    <a id="bookButton6" href="27mb.html" style="background-image: linear-gradient(#cc00cc, #002060); color: white; padding: 1vh 2vw; border-radius: 3vw; transition: 0.7s; margin-top: 0; width: 30vw;" onmouseover="document.getElementById('bookButton6').style.backgroundImage = 'linear-gradient(#ffc000, #ffc111)'" onmouseout="document.getElementById('bookButton6').style.backgroundImage = 'linear-gradient(#cc00cc, #002060)'">Book Now</a>
+  </div></a><a href="29mb.html">
+  <div class="single-service" style="margin-top: 20px;">
+  <div class="social">
+    <i class="fa-solid fa-bus-simple"></i></div>
+  <span></span>
+  <h3>29 Seater Mini Bus</h3>
+  <center>
+    <table class="estchatab" style="color: #002060; border-style: none; justify-content: center; align-items: center;">
+        
+      <tr>
+        <th>Payables</th>
+        <th>Amount</th>
+      </tr>
+      <tr>
+        <td>Travel Charges</td>
+        <td id="tc29">Choose the city above</td>
+      </tr>
+      <tr>
+        <td>GST(18%)</td>
+        <td id="gst29">Choose the cities above</td>
+      </tr>
+      <tr>
+        <td>Total Charges<abbr title="Including all the charges listed above"><i class='fa fa-info-circle' style='color: #002060; margin-left: 5px;'></i></abbr></td>
+        <td id="total29">Choose the city above</td>
+      </tr>
+    </table></center> <a id="bookButton7" href="29mb.html" style="background-image: linear-gradient(#cc00cc, #002060); color: white; padding: 1vh 2vw; border-radius: 3vw; transition: 0.7s; margin-top: 0; width: 30vw;" onmouseover="document.getElementById('bookButton7').style.backgroundImage = 'linear-gradient(#ffc000, #ffc111)'" onmouseout="document.getElementById('bookButton7').style.backgroundImage = 'linear-gradient(#cc00cc, #002060)'">Book Now</a>
+  </div></a><a href="41b.html">
+  <div class="single-service" style="margin-top: 20px;">
+  <div class="social">
+    <i class="fa-solid fa-bus-simple"></i></div>
+  <span></span>
+  <h3>41 Seater Bus</h3>
+  <center>
+    <table class="estchatab" style="color: #002060; border-style: none; justify-content: center; align-items: center;">
+        
+      <tr>
+        <th>Payables</th>
+        <th>Amount</th>
+      </tr>
+      <tr>
+        <td>Travel Charges</td>
+        <td id="tc41">Choose the city above</td>
+      </tr>
+      <tr>
+        <td>GST(18%)</td>
+        <td id="gst41">Choose the cities above</td>
+      </tr>
+      <tr>
+        <td>Total Charges<abbr title="Including all the charges listed above"><i class='fa fa-info-circle' style='color: #002060; margin-left: 5px;'></i></abbr></td>
+        <td id="total41">Choose the city above</td>
+      </tr>
+    </table></center> <a id="bookButton8" href="41b.html" style="background-image: linear-gradient(#cc00cc, #002060); color: white; padding: 1vh 2vw; border-radius: 3vw; transition: 0.7s; margin-top: 0; width: 30vw;" onmouseover="document.getElementById('bookButton8').style.backgroundImage = 'linear-gradient(#ffc000, #ffc111)'" onmouseout="document.getElementById('bookButton8').style.backgroundImage = 'linear-gradient(#cc00cc, #002060)'">Book Now</a>
+  </div></a><a href="56b.html">
+  <div class="single-service" style="margin-top: 20px; margin-bottom: 5vh;">
+    <div class="social">
+      <i class="fa-solid fa-bus-simple"></i></div>
+    <span></span>
+    <h3>56 Seater Bus</h3>
+    <center>
+      <table class="estchatab" style="color: #002060; border-style: none; justify-content: center; align-items: center;">
+          
+        <tr>
+          <th>Payables</th>
+          <th>Amount</th>
+        </tr>
+        <tr>
+          <td>Travel Charges</td>
+          <td id="tc56">Choose the city above</td>
+        </tr>
+        <tr>
+          <td>GST(18%)</td>
+          <td id="gst56">Choose the cities above</td>
+        </tr>
+        <tr>
+          <td>Total Charges<abbr title="Including all the charges listed above"><i class='fa fa-info-circle' style='color: #002060; margin-left: 5px;'></i></abbr></td>
+          <td id="total56">Choose the city above</td>
+        </tr>
+      </table></center><a id="bookButton9" href="56b.html" style="background-image: linear-gradient(#cc00cc, #002060); color: white; padding: 1vh 2vw; border-radius: 3vw; transition: 0.7s; margin-top: 0; width: 30vw;" onmouseover="document.getElementById('bookButton9').style.backgroundImage = 'linear-gradient(#ffc000, #ffc111)'" onmouseout="document.getElementById('bookButton9').style.backgroundImage = 'linear-gradient(#cc00cc, #002060)'">Book Now</a>
+
+    </div></a>
+</div></div>
+<center>
+
+<script type="text/javascript">function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+
+    function findDistance(){
+    var lat_1;
+    var lat_2;
+    var long_1;
+    var long_2;
+    
+    var citNameFrom;
+    var citNameTo;
+    var p; var c; var a; var ans; let d;
+    
+ //  City name from
+ citNameFrom = document.getElementById("from").value;
+
+ if(citNameFrom==	"Abohar"	)	{	lat_1=	30.1204	;	long_1	=	74.29	;	}
+else if(citNameFrom==	"Abu"	)	{	lat_1=	24.5925	;	long_1	=	72.7083	;	}
+else if(citNameFrom==	"Addanki"	)	{	lat_1=	15.811	;	long_1	=	79.9738	;	}
+else if(citNameFrom==	"Adilabad"	)	{	lat_1=	19.6667	;	long_1	=	78.5333	;	}
+else if(citNameFrom==	"Adoni"	)	{	lat_1=	15.63	;	long_1	=	77.28	;	}
+else if(citNameFrom==	"Agartala"	)	{	lat_1=	23.8333	;	long_1	=	91.2667	;	}
+else if(citNameFrom==	"Agra"	)	{	lat_1=	27.18	;	long_1	=	78.02	;	}
+else if(citNameFrom==	"Ahmadnagar"	)	{	lat_1=	19.0833	;	long_1	=	74.7333	;	}
+else if(citNameFrom==	"Ahmedabad"	)	{	lat_1=	23.03	;	long_1	=	72.58	;	}
+else if(citNameFrom==	"Aizawl"	)	{	lat_1=	23.7104	;	long_1	=	92.72	;	}
+else if(citNameFrom==	"Ajmer"	)	{	lat_1=	26.468	;	long_1	=	74.639	;	}
+else if(citNameFrom==	"Akola"	)	{	lat_1=	20.7333	;	long_1	=	77	;	}
+else if(citNameFrom==	"Aligarh"	)	{	lat_1=	27.88	;	long_1	=	78.08	;	}
+else if(citNameFrom==	"Alipur Duar"	)	{	lat_1=	26.4837	;	long_1	=	89.5667	;	}
+else if(citNameFrom==	"Allahabad"	)	{	lat_1=	25.455	;	long_1	=	81.84	;	}
+else if(citNameFrom==	"Alleppey"	)	{	lat_1=	9.5004	;	long_1	=	76.37	;	}
+else if(citNameFrom==	"Alwar"	)	{	lat_1=	27.5667	;	long_1	=	76.6167	;	}
+else if(citNameFrom==	"Amalapuram"	)	{	lat_1=	16.5833	;	long_1	=	82.0167	;	}
+else if(citNameFrom==	"Ambala"	)	{	lat_1=	30.3786	;	long_1	=	76.7725	;	}
+else if(citNameFrom==	"Amravati"	)	{	lat_1=	20.9333	;	long_1	=	77.75	;	}
+else if(citNameFrom==	"Amritsar"	)	{	lat_1=	31.6167	;	long_1	=	74.85	;	}
+else if(citNameFrom==	"Amudalavalasa"	)	{	lat_1=	18.4167	;	long_1	=	83.9	;	}
+else if(citNameFrom==	"Anakapalle"	)	{	lat_1=	17.68	;	long_1	=	83.02	;	}
+else if(citNameFrom==	"Anantapur"	)	{	lat_1=	14.6833	;	long_1	=	77.6	;	}
+else if(citNameFrom==	"Angamali"	)	{	lat_1=	10.196	;	long_1	=	76.386	;	}
+else if(citNameFrom==	"Armur"	)	{	lat_1=	18.79	;	long_1	=	78.29	;	}
+else if(citNameFrom==	"Asansol"	)	{	lat_1=	23.6833	;	long_1	=	86.9667	;	}
+else if(citNameFrom==	"Aurangabad"	)	{	lat_1=	19.88	;	long_1	=	75.32	;	}
+else if(citNameFrom==	"Aurangabad"	)	{	lat_1=	24.7704	;	long_1	=	84.38	;	}
+else if(citNameFrom==	"Badvel"	)	{	lat_1=	14.75	;	long_1	=	79.05	;	}
+else if(citNameFrom==	"Baharampur"	)	{	lat_1=	24.1	;	long_1	=	88.25	;	}
+else if(citNameFrom==	"Bahraigh"	)	{	lat_1=	27.6204	;	long_1	=	81.6699	;	}
+else if(citNameFrom==	"Baidyabati"	)	{	lat_1=	22.79	;	long_1	=	88.32	;	}
+else if(citNameFrom==	"Bali"	)	{	lat_1=	22.65	;	long_1	=	88.34	;	}
+else if(citNameFrom==	"Balurghat"	)	{	lat_1=	25.2167	;	long_1	=	88.7667	;	}
+else if(citNameFrom==	"Bandipura"	)	{	lat_1=	34.4225	;	long_1	=	74.6375	;	}
+else if(citNameFrom==	"Bangalore"	)	{	lat_1=	12.9699	;	long_1	=	77.598	;	}
+else if(citNameFrom==	"Bangaon"	)	{	lat_1=	23.07	;	long_1	=	88.82	;	}
+else if(citNameFrom==	"Bankura"	)	{	lat_1=	23.25	;	long_1	=	87.0667	;	}
+else if(citNameFrom==	"Bansbaria"	)	{	lat_1=	22.97	;	long_1	=	88.4	;	}
+else if(citNameFrom==	"Bapatla"	)	{	lat_1=	15.8889	;	long_1	=	80.47	;	}
+else if(citNameFrom==	"Baramula"	)	{	lat_1=	34.2	;	long_1	=	74.34	;	}
+else if(citNameFrom==	"Barasat"	)	{	lat_1=	22.2333	;	long_1	=	88.45	;	}
+else if(citNameFrom==	"Barddhaman"	)	{	lat_1=	23.25	;	long_1	=	87.85	;	}
+else if(citNameFrom==	"Bareilly"	)	{	lat_1=	28.364	;	long_1	=	79.415	;	}
+else if(citNameFrom==	"Basirhat"	)	{	lat_1=	22.6572	;	long_1	=	88.8942	;	}
+else if(citNameFrom==	"Begusarai"	)	{	lat_1=	25.42	;	long_1	=	86.13	;	}
+else if(citNameFrom==	"Belampalli"	)	{	lat_1=	19.0558	;	long_1	=	79.4931	;	}
+else if(citNameFrom==	"Belgaum"	)	{	lat_1=	15.8667	;	long_1	=	74.5	;	}
+else if(citNameFrom==	"Bellary"	)	{	lat_1=	15.15	;	long_1	=	76.915	;	}
+else if(citNameFrom==	"Bezwada"	)	{	lat_1=	16.5167	;	long_1	=	80.6167	;	}
+else if(citNameFrom==	"Bhadreswar"	)	{	lat_1=	22.82	;	long_1	=	88.35	;	}
+else if(citNameFrom==	"Bhagalpur"	)	{	lat_1=	25.25	;	long_1	=	87.0167	;	}
+else if(citNameFrom==	"Bhainsa"	)	{	lat_1=	19.1	;	long_1	=	77.9667	;	}
+else if(citNameFrom==	"Bharatpur"	)	{	lat_1=	27.2172	;	long_1	=	77.49	;	}
+else if(citNameFrom==	"Bhatpara"	)	{	lat_1=	22.8667	;	long_1	=	88.4167	;	}
+else if(citNameFrom==	"Bhavnagar"	)	{	lat_1=	21.765	;	long_1	=	72.1369	;	}
+else if(citNameFrom==	"Bhayandar"	)	{	lat_1=	19.3	;	long_1	=	72.85	;	}
+else if(citNameFrom==	"Bhilai"	)	{	lat_1=	21.2167	;	long_1	=	81.4333	;	}
+else if(citNameFrom==	"Bhilwara"	)	{	lat_1=	25.35	;	long_1	=	74.6333	;	}
+else if(citNameFrom==	"Bhimavaram"	)	{	lat_1=	16.5333	;	long_1	=	81.5333	;	}
+else if(citNameFrom==	"Bhimunipatnam"	)	{	lat_1=	17.8864	;	long_1	=	83.4471	;	}
+else if(citNameFrom==	"Bhiwandi"	)	{	lat_1=	19.3	;	long_1	=	73.0667	;	}
+else if(citNameFrom==	"Bhiwani"	)	{	lat_1=	28.7833	;	long_1	=	76.1333	;	}
+else if(citNameFrom==	"Bhopal"	)	{	lat_1=	23.25	;	long_1	=	77.4167	;	}
+else if(citNameFrom==	"Bhubaneshwar"	)	{	lat_1=	20.2644	;	long_1	=	85.8281	;	}
+else if(citNameFrom==	"Bhuj"	)	{	lat_1=	23.2504	;	long_1	=	69.81	;	}
+else if(citNameFrom==	"Bhusaval"	)	{	lat_1=	21.02	;	long_1	=	75.83	;	}
+else if(citNameFrom==	"Bidar"	)	{	lat_1=	17.9229	;	long_1	=	77.5175	;	}
+else if(citNameFrom==	"Bijapur"	)	{	lat_1=	16.8244	;	long_1	=	75.7154	;	}
+else if(citNameFrom==	"Bikaner"	)	{	lat_1=	28.0181	;	long_1	=	73.3169	;	}
+else if(citNameFrom==	"Bilaspur"	)	{	lat_1=	22.15	;	long_1	=	82.0167	;	}
+else if(citNameFrom==	"Bobbili"	)	{	lat_1=	18.5667	;	long_1	=	83.4167	;	}
+else if(citNameFrom==	"Bodhan"	)	{	lat_1=	18.67	;	long_1	=	77.9	;	}
+else if(citNameFrom==	"Bodupal"	)	{	lat_1=	17.4139	;	long_1	=	78.5783	;	}
+else if(citNameFrom==	"Brahmapur"	)	{	lat_1=	19.32	;	long_1	=	84.8	;	}
+else if(citNameFrom==	"Budaun"	)	{	lat_1=	28.03	;	long_1	=	79.09	;	}
+else if(citNameFrom==	"Bulandshahr"	)	{	lat_1=	28.4104	;	long_1	=	77.8484	;	}
+else if(citNameFrom==	"Burhanpur"	)	{	lat_1=	21.3004	;	long_1	=	76.13	;	}
+else if(citNameFrom==	"Calicut"	)	{	lat_1=	11.25	;	long_1	=	75.7667	;	}
+else if(citNameFrom==	"Cawnpore"	)	{	lat_1=	26.4725	;	long_1	=	80.3311	;	}
+else if(citNameFrom==	"Chakradharpur"	)	{	lat_1=	22.7	;	long_1	=	85.63	;	}
+else if(citNameFrom==	"Champdani"	)	{	lat_1=	22.8	;	long_1	=	88.37	;	}
+else if(citNameFrom==	"Chanda"	)	{	lat_1=	19.95	;	long_1	=	79.3	;	}
+else if(citNameFrom==	"Chandannagar"	)	{	lat_1=	22.8667	;	long_1	=	88.3833	;	}
+else if(citNameFrom==	"Chandigarh"	)	{	lat_1=	30.7353	;	long_1	=	76.7911	;	}
+else if(citNameFrom==	"Channarayapatna"	)	{	lat_1=	12.9	;	long_1	=	76.39	;	}
+else if(citNameFrom==	"Chennai"	)	{	lat_1=	13.0825	;	long_1	=	80.275	;	}
+else if(citNameFrom==	"Chicacole"	)	{	lat_1=	18.3	;	long_1	=	83.9	;	}
+else if(citNameFrom==	"Chilakalurupet"	)	{	lat_1=	16.0892	;	long_1	=	80.1672	;	}
+else if(citNameFrom==	"Chimakurti"	)	{	lat_1=	15.5819	;	long_1	=	79.868	;	}
+else if(citNameFrom==	"Chinchvad"	)	{	lat_1=	18.6278	;	long_1	=	73.8131	;	}
+else if(citNameFrom==	"Chirala"	)	{	lat_1=	15.82	;	long_1	=	80.35	;	}
+else if(citNameFrom==	"Chittaurgarh"	)	{	lat_1=	24.8894	;	long_1	=	74.6239	;	}
+else if(citNameFrom==	"Chittoor"	)	{	lat_1=	13.2	;	long_1	=	79.1167	;	}
+else if(citNameFrom==	"Coimbatore"	)	{	lat_1=	11	;	long_1	=	76.9667	;	}
+else if(citNameFrom==	"Conjeeveram"	)	{	lat_1=	12.8308	;	long_1	=	79.7078	;	}
+else if(citNameFrom==	"Cuddalore"	)	{	lat_1=	11.75	;	long_1	=	79.75	;	}
+else if(citNameFrom==	"Cuddapah"	)	{	lat_1=	14.4667	;	long_1	=	78.8167	;	}
+else if(citNameFrom==	"Curchorem"	)	{	lat_1=	15.25	;	long_1	=	74.1	;	}
+else if(citNameFrom==	"Cuttack"	)	{	lat_1=	20.45	;	long_1	=	85.8667	;	}
+else if(citNameFrom==	"Dam Dam"	)	{	lat_1=	22.62	;	long_1	=	88.42	;	}
+else if(citNameFrom==	"Daman"	)	{	lat_1=	20.417	;	long_1	=	72.85	;	}
+else if(citNameFrom==	"Darjeeling"	)	{	lat_1=	27.0417	;	long_1	=	88.2631	;	}
+else if(citNameFrom==	"Davangere"	)	{	lat_1=	14.4667	;	long_1	=	75.9167	;	}
+else if(citNameFrom==	"Dehra Dun"	)	{	lat_1=	30.318	;	long_1	=	78.029	;	}
+else if(citNameFrom==	"Delhi"	)	{	lat_1=	28.66	;	long_1	=	77.23	;	}
+else if(citNameFrom==	"Deo"	)	{	lat_1=	24.6561	;	long_1	=	84.4356	;	}
+else if(citNameFrom==	"Devarkonda"	)	{	lat_1=	16.7	;	long_1	=	78.9333	;	}
+else if(citNameFrom==	"Dhanbad"	)	{	lat_1=	23.7928	;	long_1	=	86.435	;	}
+else if(citNameFrom==	"Dharmavaram"	)	{	lat_1=	14.4142	;	long_1	=	77.715	;	}
+else if(citNameFrom==	"Dholka"	)	{	lat_1=	22.72	;	long_1	=	72.47	;	}
+else if(citNameFrom==	"Dhulia"	)	{	lat_1=	20.9	;	long_1	=	74.7833	;	}
+else if(citNameFrom==	"Dibrugarh"	)	{	lat_1=	27.4833	;	long_1	=	95	;	}
+else if(citNameFrom==	"Dindigul"	)	{	lat_1=	10.35	;	long_1	=	77.95	;	}
+else if(citNameFrom==	"Dispur"	)	{	lat_1=	26.15	;	long_1	=	91.77	;	}
+else if(citNameFrom==	"Diu"	)	{	lat_1=	20.7197	;	long_1	=	70.9904	;	}
+else if(citNameFrom==	"Drug"	)	{	lat_1=	21.19	;	long_1	=	81.28	;	}
+else if(citNameFrom==	"Durgapur"	)	{	lat_1=	23.55	;	long_1	=	87.32	;	}
+else if(citNameFrom==	"Dwarka"	)	{	lat_1=	22.2403	;	long_1	=	68.9686	;	}
+else if(citNameFrom==	"Ellore"	)	{	lat_1=	16.7	;	long_1	=	81.1	;	}
+else if(citNameFrom==	"Emmiganur"	)	{	lat_1=	15.7333	;	long_1	=	77.4833	;	}
+else if(citNameFrom==	"Erode"	)	{	lat_1=	11.3408	;	long_1	=	77.7172	;	}
+else if(citNameFrom==	"Etawah"	)	{	lat_1=	26.7855	;	long_1	=	79.015	;	}
+else if(citNameFrom==	"Faridabad"	)	{	lat_1=	28.4333	;	long_1	=	77.3167	;	}
+else if(citNameFrom==	"Fatehpur"	)	{	lat_1=	25.8804	;	long_1	=	80.8	;	}
+else if(citNameFrom==	"Fatehpur Sikri"	)	{	lat_1=	27.0911	;	long_1	=	77.6611	;	}
+else if(citNameFrom==	"Firozabad"	)	{	lat_1=	27.15	;	long_1	=	78.3949	;	}
+else if(citNameFrom==	"Fyzabad"	)	{	lat_1=	26.7504	;	long_1	=	82.17	;	}
+else if(citNameFrom==	"Gadwal"	)	{	lat_1=	16.23	;	long_1	=	77.8	;	}
+else if(citNameFrom==	"Gangtok"	)	{	lat_1=	27.33	;	long_1	=	88.62	;	}
+else if(citNameFrom==	"Gauripur"	)	{	lat_1=	26.08	;	long_1	=	89.97	;	}
+else if(citNameFrom==	"Gaya"	)	{	lat_1=	24.75	;	long_1	=	85.0167	;	}
+else if(citNameFrom==	"Ghandinagar"	)	{	lat_1=	23.22	;	long_1	=	72.68	;	}
+else if(citNameFrom==	"Ghaziabad"	)	{	lat_1=	28.6667	;	long_1	=	77.4167	;	}
+else if(citNameFrom==	"Giddalur"	)	{	lat_1=	15.3784	;	long_1	=	78.9265	;	}
+else if(citNameFrom==	"Godhra"	)	{	lat_1=	22.7755	;	long_1	=	73.6149	;	}
+else if(citNameFrom==	"Gorakhpur"	)	{	lat_1=	26.7611	;	long_1	=	83.3667	;	}
+else if(citNameFrom==	"Gudivada"	)	{	lat_1=	16.43	;	long_1	=	80.99	;	}
+else if(citNameFrom==	"Gulbarga"	)	{	lat_1=	17.3333	;	long_1	=	76.8333	;	}
+else if(citNameFrom==	"Guntakal"	)	{	lat_1=	15.17	;	long_1	=	77.38	;	}
+else if(citNameFrom==	"Guntur"	)	{	lat_1=	16.3	;	long_1	=	80.45	;	}
+else if(citNameFrom==	"Gurgaon"	)	{	lat_1=	28.45	;	long_1	=	77.02	;	}
+else if(citNameFrom==	"Guwahati"	)	{	lat_1=	26.1667	;	long_1	=	91.7667	;	}
+else if(citNameFrom==	"Gwalior"	)	{	lat_1=	26.215	;	long_1	=	78.1931	;	}
+else if(citNameFrom==	"Habra"	)	{	lat_1=	22.83	;	long_1	=	88.63	;	}
+else if(citNameFrom==	"Haldia"	)	{	lat_1=	22.0257	;	long_1	=	88.0583	;	}
+else if(citNameFrom==	"Halisahar"	)	{	lat_1=	22.95	;	long_1	=	88.42	;	}
+else if(citNameFrom==	"Handwara"	)	{	lat_1=	34.4	;	long_1	=	74.28	;	}
+else if(citNameFrom==	"Haora"	)	{	lat_1=	22.59	;	long_1	=	88.31	;	}
+else if(citNameFrom==	"Hapur"	)	{	lat_1=	28.7437	;	long_1	=	77.7628	;	}
+else if(citNameFrom==	"Haripur"	)	{	lat_1=	31.52	;	long_1	=	75.98	;	}
+else if(citNameFrom==	"Hassan"	)	{	lat_1=	13.005	;	long_1	=	76.1028	;	}
+else if(citNameFrom==	"Hathras"	)	{	lat_1=	27.6	;	long_1	=	78.05	;	}
+else if(citNameFrom==	"Hindupur"	)	{	lat_1=	13.83	;	long_1	=	77.49	;	}
+else if(citNameFrom==	"Hisar"	)	{	lat_1=	29.1489	;	long_1	=	75.7367	;	}
+else if(citNameFrom==	"Hospet"	)	{	lat_1=	15.2667	;	long_1	=	76.4	;	}
+else if(citNameFrom==	"Hubli"	)	{	lat_1=	15.36	;	long_1	=	75.125	;	}
+else if(citNameFrom==	"Hugli"	)	{	lat_1=	22.9	;	long_1	=	88.39	;	}
+else if(citNameFrom==	"Hyderabad"	)	{	lat_1=	17.3667	;	long_1	=	78.4667	;	}
+else if(citNameFrom==	"Ichalkaranji"	)	{	lat_1=	16.7	;	long_1	=	74.47	;	}
+else if(citNameFrom==	"Imphal"	)	{	lat_1=	24.82	;	long_1	=	93.95	;	}
+else if(citNameFrom==	"Indore"	)	{	lat_1=	22.7206	;	long_1	=	75.8472	;	}
+else if(citNameFrom==	"Ingraj Bazar"	)	{	lat_1=	25	;	long_1	=	88.15	;	}
+else if(citNameFrom==	"Itanagar"	)	{	lat_1=	27.1	;	long_1	=	93.62	;	}
+else if(citNameFrom==	"Jabalpur"	)	{	lat_1=	23.1667	;	long_1	=	79.9333	;	}
+else if(citNameFrom==	"Jaggayyapeta"	)	{	lat_1=	16.892	;	long_1	=	80.0976	;	}
+else if(citNameFrom==	"Jagtial"	)	{	lat_1=	18.8	;	long_1	=	78.93	;	}
+else if(citNameFrom==	"Jaipur"	)	{	lat_1=	26.9167	;	long_1	=	75.8667	;	}
+else if(citNameFrom==	"Jaisalmer"	)	{	lat_1=	26.9167	;	long_1	=	70.9167	;	}
+else if(citNameFrom==	"Jalandhar"	)	{	lat_1=	31.3256	;	long_1	=	75.5792	;	}
+else if(citNameFrom==	"Jalgaon"	)	{	lat_1=	21.0167	;	long_1	=	75.5667	;	}
+else if(citNameFrom==	"Jalor"	)	{	lat_1=	25.35	;	long_1	=	72.6167	;	}
+else if(citNameFrom==	"Jalpaiguri"	)	{	lat_1=	26.5167	;	long_1	=	88.7333	;	}
+else if(citNameFrom==	"Jammalamadugu"	)	{	lat_1=	14.85	;	long_1	=	78.38	;	}
+else if(citNameFrom==	"Jammu"	)	{	lat_1=	32.7333	;	long_1	=	74.85	;	}
+else if(citNameFrom==	"Jamnagar"	)	{	lat_1=	22.47	;	long_1	=	70.07	;	}
+else if(citNameFrom==	"Jamshedpur"	)	{	lat_1=	22.8	;	long_1	=	86.1833	;	}
+else if(citNameFrom==	"Jamuria"	)	{	lat_1=	23.7	;	long_1	=	87.08	;	}
+else if(citNameFrom==	"Jangaon"	)	{	lat_1=	17.72	;	long_1	=	79.18	;	}
+else if(citNameFrom==	"Jasdan"	)	{	lat_1=	22.03	;	long_1	=	71.2	;	}
+else if(citNameFrom==	"Jatani"	)	{	lat_1=	20.17	;	long_1	=	85.7	;	}
+else if(citNameFrom==	"Jaunpur"	)	{	lat_1=	25.7333	;	long_1	=	82.6833	;	}
+else if(citNameFrom==	"Jaynagar-Majilpur"	)	{	lat_1=	22.1772	;	long_1	=	88.4258	;	}
+else if(citNameFrom==	"Jhansi"	)	{	lat_1=	25.4486	;	long_1	=	78.5696	;	}
+else if(citNameFrom==	"Jodhpur"	)	{	lat_1=	26.2918	;	long_1	=	73.0168	;	}
+else if(citNameFrom==	"Jorhat"	)	{	lat_1=	26.75	;	long_1	=	94.2167	;	}
+else if(citNameFrom==	"Junnar"	)	{	lat_1=	19.2	;	long_1	=	73.88	;	}
+else if(citNameFrom==	"Kadiri"	)	{	lat_1=	14.12	;	long_1	=	78.17	;	}
+else if(citNameFrom==	"Kagaznagar"	)	{	lat_1=	19.3316	;	long_1	=	79.4661	;	}
+else if(citNameFrom==	"Kairana"	)	{	lat_1=	29.4	;	long_1	=	77.2	;	}
+else if(citNameFrom==	"Kakinada"	)	{	lat_1=	16.9333	;	long_1	=	82.2167	;	}
+else if(citNameFrom==	"Kalyan"	)	{	lat_1=	19.2502	;	long_1	=	73.1602	;	}
+else if(citNameFrom==	"Kalyani"	)	{	lat_1=	22.975	;	long_1	=	88.4344	;	}
+else if(citNameFrom==	"Kamareddipet"	)	{	lat_1=	18.3167	;	long_1	=	78.35	;	}
+else if(citNameFrom==	"Kamarhati"	)	{	lat_1=	22.67	;	long_1	=	88.37	;	}
+else if(citNameFrom==	"Kanchrapara"	)	{	lat_1=	22.97	;	long_1	=	88.43	;	}
+else if(citNameFrom==	"Kandukur"	)	{	lat_1=	15.2165	;	long_1	=	79.9042	;	}
+else if(citNameFrom==	"Karimnagar"	)	{	lat_1=	18.4333	;	long_1	=	79.15	;	}
+else if(citNameFrom==	"Karnal"	)	{	lat_1=	29.6804	;	long_1	=	76.97	;	}
+else if(citNameFrom==	"Karur"	)	{	lat_1=	10.9504	;	long_1	=	78.0833	;	}
+else if(citNameFrom==	"Kavali"	)	{	lat_1=	14.9123	;	long_1	=	79.9944	;	}
+else if(citNameFrom==	"Kavaratti"	)	{	lat_1=	10.5626	;	long_1	=	72.6369	;	}
+else if(citNameFrom==	"Khajuraho"	)	{	lat_1=	24.85	;	long_1	=	79.9333	;	}
+else if(citNameFrom==	"Khambhat"	)	{	lat_1=	22.3131	;	long_1	=	72.6194	;	}
+else if(citNameFrom==	"Khammam"	)	{	lat_1=	17.25	;	long_1	=	80.15	;	}
+else if(citNameFrom==	"Kharagpur"	)	{	lat_1=	22.3302	;	long_1	=	87.3237	;	}
+else if(citNameFrom==	"Khardah"	)	{	lat_1=	22.72	;	long_1	=	88.38	;	}
+else if(citNameFrom==	"Khed Brahma"	)	{	lat_1=	24.0299	;	long_1	=	73.0463	;	}
+else if(citNameFrom==	"Kochi"	)	{	lat_1=	9.9667	;	long_1	=	76.2833	;	}
+else if(citNameFrom==	"Kodaikanal"	)	{	lat_1=	10.23	;	long_1	=	77.48	;	}
+else if(citNameFrom==	"Kohima"	)	{	lat_1=	25.6667	;	long_1	=	94.1194	;	}
+else if(citNameFrom==	"Koilkuntla"	)	{	lat_1=	15.2333	;	long_1	=	78.3167	;	}
+else if(citNameFrom==	"Kolar"	)	{	lat_1=	13.1333	;	long_1	=	78.1333	;	}
+else if(citNameFrom==	"Kolhapur"	)	{	lat_1=	16.7	;	long_1	=	74.2333	;	}
+else if(citNameFrom==	"Kolkata"	)	{	lat_1=	22.5411	;	long_1	=	88.3378	;	}
+else if(citNameFrom==	"Koratla"	)	{	lat_1=	18.82	;	long_1	=	78.72	;	}
+else if(citNameFrom==	"Kota"	)	{	lat_1=	25.18	;	long_1	=	75.83	;	}
+else if(citNameFrom==	"Kothapet"	)	{	lat_1=	19.3333	;	long_1	=	79.4833	;	}
+else if(citNameFrom==	"Kottagudem"	)	{	lat_1=	17.55	;	long_1	=	80.63	;	}
+else if(citNameFrom==	"Kovvur"	)	{	lat_1=	17.0167	;	long_1	=	81.7333	;	}
+else if(citNameFrom==	"Krishnanagar"	)	{	lat_1=	23.4	;	long_1	=	88.5	;	}
+else if(citNameFrom==	"Kulgam"	)	{	lat_1=	33.64	;	long_1	=	75.02	;	}
+else if(citNameFrom==	"Kulti"	)	{	lat_1=	23.73	;	long_1	=	86.85	;	}
+else if(citNameFrom==	"Kumbakonam"	)	{	lat_1=	10.9805	;	long_1	=	79.4	;	}
+else if(citNameFrom==	"Kurnool"	)	{	lat_1=	15.8222	;	long_1	=	78.035	;	}
+else if(citNameFrom==	"Latur"	)	{	lat_1=	18.4004	;	long_1	=	76.57	;	}
+else if(citNameFrom==	"Lucknow"	)	{	lat_1=	26.847	;	long_1	=	80.947	;	}
+else if(citNameFrom==	"Ludhiana"	)	{	lat_1=	30.9083	;	long_1	=	75.8486	;	}
+else if(citNameFrom==	"Macherla"	)	{	lat_1=	16.48	;	long_1	=	79.43	;	}
+else if(citNameFrom==	"Machilipatnam"	)	{	lat_1=	16.1667	;	long_1	=	81.1333	;	}
+else if(citNameFrom==	"Madanapalle"	)	{	lat_1=	13.55	;	long_1	=	78.5	;	}
+else if(citNameFrom==	"Madhyamgram"	)	{	lat_1=	22.7	;	long_1	=	88.45	;	}
+else if(citNameFrom==	"Madurai"	)	{	lat_1=	9.9197	;	long_1	=	78.1194	;	}
+else if(citNameFrom==	"Mahbubnagar"	)	{	lat_1=	16.7333	;	long_1	=	77.9833	;	}
+else if(citNameFrom==	"Mahesana"	)	{	lat_1=	23.6	;	long_1	=	72.4	;	}
+else if(citNameFrom==	"Maihar"	)	{	lat_1=	24.27	;	long_1	=	80.75	;	}
+else if(citNameFrom==	"Malaut"	)	{	lat_1=	30.19	;	long_1	=	74.499	;	}
+else if(citNameFrom==	"Malegaon"	)	{	lat_1=	20.55	;	long_1	=	74.55	;	}
+else if(citNameFrom==	"Mancheral"	)	{	lat_1=	18.8679	;	long_1	=	79.4639	;	}
+else if(citNameFrom==	"Mandamari"	)	{	lat_1=	18.9822	;	long_1	=	79.4811	;	}
+else if(citNameFrom==	"Mandapeta"	)	{	lat_1=	16.87	;	long_1	=	81.93	;	}
+else if(citNameFrom==	"Mandsaur"	)	{	lat_1=	24.03	;	long_1	=	75.08	;	}
+else if(citNameFrom==	"Mandya"	)	{	lat_1=	12.5242	;	long_1	=	76.8958	;	}
+else if(citNameFrom==	"Mangalagiri"	)	{	lat_1=	16.43	;	long_1	=	80.55	;	}
+else if(citNameFrom==	"Mangalore"	)	{	lat_1=	12.8703	;	long_1	=	74.8806	;	}
+else if(citNameFrom==	"Mangur"	)	{	lat_1=	17.9373	;	long_1	=	80.8185	;	}
+else if(citNameFrom==	"Markapur"	)	{	lat_1=	15.735	;	long_1	=	79.27	;	}
+else if(citNameFrom==	"Mathura"	)	{	lat_1=	27.4833	;	long_1	=	77.6833	;	}
+else if(citNameFrom==	"Mauli"	)	{	lat_1=	30.7194	;	long_1	=	76.7181	;	}
+else if(citNameFrom==	"Medinipur"	)	{	lat_1=	22.4333	;	long_1	=	87.3333	;	}
+else if(citNameFrom==	"Meerut"	)	{	lat_1=	28.99	;	long_1	=	77.7	;	}
+else if(citNameFrom==	"Metpalli"	)	{	lat_1=	18.8297	;	long_1	=	78.5878	;	}
+else if(citNameFrom==	"Mirzapur"	)	{	lat_1=	25.15	;	long_1	=	82.58	;	}
+else if(citNameFrom==	"Moradabad"	)	{	lat_1=	28.8418	;	long_1	=	78.7568	;	}
+else if(citNameFrom==	"Mumbai"	)	{	lat_1=	18.9667	;	long_1	=	72.8333	;	}
+else if(citNameFrom==	"Muzaffarnagar"	)	{	lat_1=	29.4708	;	long_1	=	77.7033	;	}
+else if(citNameFrom==	"Muzaffarpur"	)	{	lat_1=	26.12	;	long_1	=	85.3833	;	}
+else if(citNameFrom==	"Mysore"	)	{	lat_1=	12.3086	;	long_1	=	76.6531	;	}
+else if(citNameFrom==	"Nagari"	)	{	lat_1=	13.33	;	long_1	=	79.58	;	}
+else if(citNameFrom==	"Nagercoil"	)	{	lat_1=	8.17	;	long_1	=	77.43	;	}
+else if(citNameFrom==	"Nagpur"	)	{	lat_1=	21.1539	;	long_1	=	79.0831	;	}
+else if(citNameFrom==	"Naihati"	)	{	lat_1=	22.9	;	long_1	=	88.42	;	}
+else if(citNameFrom==	"Naini Tal"	)	{	lat_1=	29.3919	;	long_1	=	79.4542	;	}
+else if(citNameFrom==	"Nalgonda"	)	{	lat_1=	17.05	;	long_1	=	79.27	;	}
+else if(citNameFrom==	"Nanded"	)	{	lat_1=	19.15	;	long_1	=	77.3333	;	}
+else if(citNameFrom==	"Nandod"	)	{	lat_1=	21.8704	;	long_1	=	73.5026	;	}
+else if(citNameFrom==	"Nandyal"	)	{	lat_1=	15.48	;	long_1	=	78.48	;	}
+else if(citNameFrom==	"Narasannapeta"	)	{	lat_1=	18.4151	;	long_1	=	84.0447	;	}
+else if(citNameFrom==	"Narasapur"	)	{	lat_1=	16.4333	;	long_1	=	81.6833	;	}
+else if(citNameFrom==	"Narasaraopet"	)	{	lat_1=	16.236	;	long_1	=	80.054	;	}
+else if(citNameFrom==	"Nasik"	)	{	lat_1=	20	;	long_1	=	73.7833	;	}
+else if(citNameFrom==	"Navadwip"	)	{	lat_1=	23.4088	;	long_1	=	88.3657	;	}
+else if(citNameFrom==	"Navsari"	)	{	lat_1=	20.8504	;	long_1	=	72.92	;	}
+else if(citNameFrom==	"Negapatam"	)	{	lat_1=	10.7667	;	long_1	=	79.8333	;	}
+else if(citNameFrom==	"Nellore"	)	{	lat_1=	14.4333	;	long_1	=	79.9667	;	}
+else if(citNameFrom==	"New Delhi"	)	{	lat_1=	28.7	;	long_1	=	77.2	;	}
+else if(citNameFrom==	"Nidadavole"	)	{	lat_1=	16.92	;	long_1	=	81.67	;	}
+else if(citNameFrom==	"Nizamabad"	)	{	lat_1=	18.6704	;	long_1	=	78.1	;	}
+else if(citNameFrom==	"Ongole"	)	{	lat_1=	15.5	;	long_1	=	80.05	;	}
+else if(citNameFrom==	"Ootacamund"	)	{	lat_1=	11.4086	;	long_1	=	76.6939	;	}
+else if(citNameFrom==	"Osmanabad"	)	{	lat_1=	18.1667	;	long_1	=	76.05	;	}
+else if(citNameFrom==	"Palakollu"	)	{	lat_1=	16.5333	;	long_1	=	81.7333	;	}
+else if(citNameFrom==	"Palghat"	)	{	lat_1=	10.7792	;	long_1	=	76.6547	;	}
+else if(citNameFrom==	"Pali"	)	{	lat_1=	25.7725	;	long_1	=	73.3233	;	}
+else if(citNameFrom==	"Palmaner"	)	{	lat_1=	13.2	;	long_1	=	78.75	;	}
+else if(citNameFrom==	"Paloncha"	)	{	lat_1=	17.5815	;	long_1	=	80.6765	;	}
+else if(citNameFrom==	"Pamidi"	)	{	lat_1=	14.95	;	long_1	=	77.5833	;	}
+else if(citNameFrom==	"Panaji"	)	{	lat_1=	15.48	;	long_1	=	73.83	;	}
+else if(citNameFrom==	"Panchkula"	)	{	lat_1=	30.6915	;	long_1	=	76.8537	;	}
+else if(citNameFrom==	"Panihati"	)	{	lat_1=	22.69	;	long_1	=	88.37	;	}
+else if(citNameFrom==	"Panipat"	)	{	lat_1=	29.4004	;	long_1	=	76.97	;	}
+else if(citNameFrom==	"Parbhani"	)	{	lat_1=	19.2704	;	long_1	=	76.76	;	}
+else if(citNameFrom==	"Pathanamthitta"	)	{	lat_1=	9.2647	;	long_1	=	76.7872	;	}
+else if(citNameFrom==	"Pathankot"	)	{	lat_1=	32.2689	;	long_1	=	75.6497	;	}
+else if(citNameFrom==	"Patiala"	)	{	lat_1=	30.3204	;	long_1	=	76.385	;	}
+else if(citNameFrom==	"Patna"	)	{	lat_1=	25.61	;	long_1	=	85.1414	;	}
+else if(citNameFrom==	"Pedana"	)	{	lat_1=	16.2667	;	long_1	=	81.1667	;	}
+else if(citNameFrom==	"Pilibhit"	)	{	lat_1=	28.64	;	long_1	=	79.81	;	}
+else if(citNameFrom==	"Pithapuram"	)	{	lat_1=	17.1167	;	long_1	=	82.2667	;	}
+else if(citNameFrom==	"Ponnuru"	)	{	lat_1=	16.0667	;	long_1	=	80.5667	;	}
+else if(citNameFrom==	"Porbandar"	)	{	lat_1=	21.6425	;	long_1	=	69.6047	;	}
+else if(citNameFrom==	"Port Blair"	)	{	lat_1=	11.6667	;	long_1	=	92.75	;	}
+else if(citNameFrom==	"Proddatur"	)	{	lat_1=	14.73	;	long_1	=	78.55	;	}
+else if(citNameFrom==	"Puducherry"	)	{	lat_1=	11.93	;	long_1	=	79.83	;	}
+else if(citNameFrom==	"Pulivendla"	)	{	lat_1=	14.4167	;	long_1	=	78.2333	;	}
+else if(citNameFrom==	"Pune"	)	{	lat_1=	18.5196	;	long_1	=	73.8553	;	}
+else if(citNameFrom==	"Punganuru"	)	{	lat_1=	13.3667	;	long_1	=	78.5833	;	}
+else if(citNameFrom==	"Puri"	)	{	lat_1=	19.8	;	long_1	=	85.8167	;	}
+else if(citNameFrom==	"Purnea"	)	{	lat_1=	25.78	;	long_1	=	87.47	;	}
+else if(citNameFrom==	"Puttur"	)	{	lat_1=	13.45	;	long_1	=	79.55	;	}
+else if(citNameFrom==	"Quilon"	)	{	lat_1=	8.8853	;	long_1	=	76.5864	;	}
+else if(citNameFrom==	"Raichur"	)	{	lat_1=	16.2104	;	long_1	=	77.355	;	}
+else if(citNameFrom==	"Raiganj"	)	{	lat_1=	25.6167	;	long_1	=	88.1167	;	}
+else if(citNameFrom==	"Raipur"	)	{	lat_1=	21.2379	;	long_1	=	81.6337	;	}
+else if(citNameFrom==	"Rajahmundry"	)	{	lat_1=	16.9833	;	long_1	=	81.7833	;	}
+else if(citNameFrom==	"Rajaori"	)	{	lat_1=	33.38	;	long_1	=	74.3	;	}
+else if(citNameFrom==	"Rajapalaiyam"	)	{	lat_1=	9.4204	;	long_1	=	77.58	;	}
+else if(citNameFrom==	"Rajgir"	)	{	lat_1=	25.03	;	long_1	=	85.42	;	}
+else if(citNameFrom==	"Rajkot"	)	{	lat_1=	22.2969	;	long_1	=	70.7984	;	}
+else if(citNameFrom==	"Rameswaram"	)	{	lat_1=	9.28	;	long_1	=	79.3	;	}
+else if(citNameFrom==	"Ramgundam"	)	{	lat_1=	18.8	;	long_1	=	79.45	;	}
+else if(citNameFrom==	"Rampur"	)	{	lat_1=	28.8154	;	long_1	=	79.025	;	}
+else if(citNameFrom==	"Ranchi"	)	{	lat_1=	23.3556	;	long_1	=	85.3347	;	}
+else if(citNameFrom==	"Ratlam"	)	{	lat_1=	23.3167	;	long_1	=	75.0667	;	}
+else if(citNameFrom==	"Raurkela"	)	{	lat_1=	22.2492	;	long_1	=	84.8828	;	}
+else if(citNameFrom==	"Rayachoti"	)	{	lat_1=	14.05	;	long_1	=	78.75	;	}
+else if(citNameFrom==	"Repalle"	)	{	lat_1=	16.02	;	long_1	=	80.85	;	}
+else if(citNameFrom==	"Rishra"	)	{	lat_1=	22.71	;	long_1	=	88.35	;	}
+else if(citNameFrom==	"Rohtak"	)	{	lat_1=	28.9	;	long_1	=	76.5667	;	}
+else if(citNameFrom==	"Saharanpur"	)	{	lat_1=	29.964	;	long_1	=	77.546	;	}
+else if(citNameFrom==	"Saharsa"	)	{	lat_1=	25.88	;	long_1	=	86.6	;	}
+else if(citNameFrom==	"Salem"	)	{	lat_1=	11.65	;	long_1	=	78.1667	;	}
+else if(citNameFrom==	"Samalkot"	)	{	lat_1=	17.0531	;	long_1	=	82.1695	;	}
+else if(citNameFrom==	"Sambalpur"	)	{	lat_1=	21.4704	;	long_1	=	83.9701	;	}
+else if(citNameFrom==	"Sambhal"	)	{	lat_1=	28.58	;	long_1	=	78.55	;	}
+else if(citNameFrom==	"Sangli"	)	{	lat_1=	16.8667	;	long_1	=	74.5667	;	}
+else if(citNameFrom==	"Sannai"	)	{	lat_1=	24.16	;	long_1	=	80.83	;	}
+else if(citNameFrom==	"Sattenapalle"	)	{	lat_1=	16.3962	;	long_1	=	80.1497	;	}
+else if(citNameFrom==	"Saugor"	)	{	lat_1=	23.8504	;	long_1	=	78.75	;	}
+else if(citNameFrom==	"Secunderabad"	)	{	lat_1=	17.45	;	long_1	=	78.5	;	}
+else if(citNameFrom==	"Shahjanpur"	)	{	lat_1=	27.8804	;	long_1	=	79.905	;	}
+else if(citNameFrom==	"Shantipur"	)	{	lat_1=	23.25	;	long_1	=	88.43	;	}
+else if(citNameFrom==	"Shiliguri"	)	{	lat_1=	26.72	;	long_1	=	88.42	;	}
+else if(citNameFrom==	"Shillong"	)	{	lat_1=	25.5744	;	long_1	=	91.8789	;	}
+else if(citNameFrom==	"Shimla"	)	{	lat_1=	31.1033	;	long_1	=	77.1722	;	}
+else if(citNameFrom==	"Shimoga"	)	{	lat_1=	13.9304	;	long_1	=	75.56	;	}
+else if(citNameFrom==	"Shrirampur"	)	{	lat_1=	22.75	;	long_1	=	88.34	;	}
+else if(citNameFrom==	"Shrirangapattana"	)	{	lat_1=	12.4181	;	long_1	=	76.6947	;	}
+else if(citNameFrom==	"Sihor"	)	{	lat_1=	21.7	;	long_1	=	71.97	;	}
+else if(citNameFrom==	"Sikar"	)	{	lat_1=	27.6119	;	long_1	=	75.1397	;	}
+else if(citNameFrom==	"Silchar"	)	{	lat_1=	24.7904	;	long_1	=	92.79	;	}
+else if(citNameFrom==	"Silvassa"	)	{	lat_1=	20.2666	;	long_1	=	73.0166	;	}
+else if(citNameFrom==	"Sirsa"	)	{	lat_1=	29.4904	;	long_1	=	75.03	;	}
+else if(citNameFrom==	"Sirsilla"	)	{	lat_1=	18.38	;	long_1	=	78.83	;	}
+else if(citNameFrom==	"Sitalpur"	)	{	lat_1=	27.63	;	long_1	=	80.75	;	}
+else if(citNameFrom==	"Solan"	)	{	lat_1=	30.92	;	long_1	=	77.12	;	}
+else if(citNameFrom==	"Solapur"	)	{	lat_1=	17.6833	;	long_1	=	75.9167	;	}
+else if(citNameFrom==	"Sonipat"	)	{	lat_1=	28.9958	;	long_1	=	77.0114	;	}
+else if(citNameFrom==	"Sopur"	)	{	lat_1=	34.3	;	long_1	=	74.47	;	}
+else if(citNameFrom==	"Srinagar"	)	{	lat_1=	34.0911	;	long_1	=	74.8061	;	}
+else if(citNameFrom==	"Surat"	)	{	lat_1=	21.17	;	long_1	=	72.83	;	}
+else if(citNameFrom==	"Suriapet"	)	{	lat_1=	17.15	;	long_1	=	79.6167	;	}
+else if(citNameFrom==	"Tadepalle"	)	{	lat_1=	16.4667	;	long_1	=	80.6	;	}
+else if(citNameFrom==	"Tadepallegudem"	)	{	lat_1=	16.8333	;	long_1	=	81.5	;	}
+else if(citNameFrom==	"Tadpatri"	)	{	lat_1=	14.92	;	long_1	=	78.02	;	}
+else if(citNameFrom==	"Tanjore"	)	{	lat_1=	10.8	;	long_1	=	79.15	;	}
+else if(citNameFrom==	"Tanuku"	)	{	lat_1=	16.75	;	long_1	=	81.7	;	}
+else if(citNameFrom==	"Tenali"	)	{	lat_1=	16.243	;	long_1	=	80.64	;	}
+else if(citNameFrom==	"Tezpur"	)	{	lat_1=	26.6338	;	long_1	=	92.8	;	}
+else if(citNameFrom==	"Thane"	)	{	lat_1=	19.18	;	long_1	=	72.9633	;	}
+else if(citNameFrom==	"Thiruvananthapuram"	)	{	lat_1=	8.5	;	long_1	=	76.8997	;	}
+else if(citNameFrom==	"Tinnevelly"	)	{	lat_1=	8.7289	;	long_1	=	77.7081	;	}
+else if(citNameFrom==	"Tirupati"	)	{	lat_1=	13.65	;	long_1	=	79.42	;	}
+else if(citNameFrom==	"Tiruppur"	)	{	lat_1=	11.1075	;	long_1	=	77.3398	;	}
+else if(citNameFrom==	"Tiruvannamalai"	)	{	lat_1=	12.2604	;	long_1	=	79.1	;	}
+else if(citNameFrom==	"Titagarh"	)	{	lat_1=	22.74	;	long_1	=	88.37	;	}
+else if(citNameFrom==	"Tonk"	)	{	lat_1=	26.1505	;	long_1	=	75.79	;	}
+else if(citNameFrom==	"Trichinopoly"	)	{	lat_1=	10.8269	;	long_1	=	78.6928	;	}
+else if(citNameFrom==	"Trichur"	)	{	lat_1=	10.52	;	long_1	=	76.21	;	}
+else if(citNameFrom==	"Tumkur"	)	{	lat_1=	13.33	;	long_1	=	77.1	;	}
+else if(citNameFrom==	"Tuni"	)	{	lat_1=	17.35	;	long_1	=	82.55	;	}
+else if(citNameFrom==	"Tuticorin"	)	{	lat_1=	8.7833	;	long_1	=	78.1333	;	}
+else if(citNameFrom==	"Udaipur"	)	{	lat_1=	24.5833	;	long_1	=	73.6833	;	}
+else if(citNameFrom==	"Udhampur"	)	{	lat_1=	32.93	;	long_1	=	75.13	;	}
+else if(citNameFrom==	"Udipi"	)	{	lat_1=	13.3322	;	long_1	=	74.7461	;	}
+else if(citNameFrom==	"Ujjain"	)	{	lat_1=	23.1828	;	long_1	=	75.7772	;	}
+else if(citNameFrom==	"Ulhasnagar"	)	{	lat_1=	19.2167	;	long_1	=	73.15	;	}
+else if(citNameFrom==	"Uluberiya"	)	{	lat_1=	22.47	;	long_1	=	88.11	;	}
+else if(citNameFrom==	"Umaria"	)	{	lat_1=	23.5245	;	long_1	=	80.8365	;	}
+else if(citNameFrom==	"Uran"	)	{	lat_1=	18.89	;	long_1	=	72.95	;	}
+else if(citNameFrom==	"Vadodara"	)	{	lat_1=	22.3	;	long_1	=	73.2	;	}
+else if(citNameFrom==	"Valparai"	)	{	lat_1=	10.3204	;	long_1	=	76.97	;	}
+else if(citNameFrom==	"Varanasi"	)	{	lat_1=	25.3189	;	long_1	=	83.0128	;	}
+else if(citNameFrom==	"Vellore"	)	{	lat_1=	12.9204	;	long_1	=	79.15	;	}
+else if(citNameFrom==	"Venkatagiri"	)	{	lat_1=	13.9667	;	long_1	=	79.5833	;	}
+else if(citNameFrom==	"Vidisha"	)	{	lat_1=	23.5239	;	long_1	=	77.8061	;	}
+else if(citNameFrom==	"Vikarabad"	)	{	lat_1=	17.33	;	long_1	=	77.9	;	}
+else if(citNameFrom==	"Vinukonda"	)	{	lat_1=	16.05	;	long_1	=	79.75	;	}
+else if(citNameFrom==	"Vishakhapatnam"	)	{	lat_1=	17.7333	;	long_1	=	83.3167	;	}
+else if(citNameFrom==	"Vizianagaram"	)	{	lat_1=	18.1167	;	long_1	=	83.4167	;	}
+else if(citNameFrom==	"Vrindavan"	)	{	lat_1=	27.5806	;	long_1	=	77.7006	;	}
+else if(citNameFrom==	"Wanparti"	)	{	lat_1=	16.361	;	long_1	=	78.0627	;	}
+else if(citNameFrom==	"Warangal"	)	{	lat_1=	17.9756	;	long_1	=	79.6011	;	}
+else if(citNameFrom==	"Yavatmal"	)	{	lat_1=	20.4	;	long_1	=	78.1333	;	}
+else if(citNameFrom==	"Yellandu"	)	{	lat_1=	17.6	;	long_1	=	80.33	;	}
+
+    citNameTo = document.getElementById("to").value;
+    if(citNameTo==	"Abohar"	)	{	lat_2=	30.1204	;	long_2	=	74.29	;	}
+else if(citNameTo==	"Abu"	)	{	lat_2=	24.5925	;	long_2	=	72.7083	;	}
+else if(citNameTo==	"Addanki"	)	{	lat_2=	15.811	;	long_2	=	79.9738	;	}
+else if(citNameTo==	"Adilabad"	)	{	lat_2=	19.6667	;	long_2	=	78.5333	;	}
+else if(citNameTo==	"Adoni"	)	{	lat_2=	15.63	;	long_2	=	77.28	;	}
+else if(citNameTo==	"Agartala"	)	{	lat_2=	23.8333	;	long_2	=	91.2667	;	}
+else if(citNameTo==	"Agra"	)	{	lat_2=	27.18	;	long_2	=	78.02	;	}
+else if(citNameTo==	"Ahmadnagar"	)	{	lat_2=	19.0833	;	long_2	=	74.7333	;	}
+else if(citNameTo==	"Ahmedabad"	)	{	lat_2=	23.03	;	long_2	=	72.58	;	}
+else if(citNameTo==	"Aizawl"	)	{	lat_2=	23.7104	;	long_2	=	92.72	;	}
+else if(citNameTo==	"Ajmer"	)	{	lat_2=	26.468	;	long_2	=	74.639	;	}
+else if(citNameTo==	"Akola"	)	{	lat_2=	20.7333	;	long_2	=	77	;	}
+else if(citNameTo==	"Aligarh"	)	{	lat_2=	27.88	;	long_2	=	78.08	;	}
+else if(citNameTo==	"Alipur Duar"	)	{	lat_2=	26.4837	;	long_2	=	89.5667	;	}
+else if(citNameTo==	"Allahabad"	)	{	lat_2=	25.455	;	long_2	=	81.84	;	}
+else if(citNameTo==	"Alleppey"	)	{	lat_2=	9.5004	;	long_2	=	76.37	;	}
+else if(citNameTo==	"Alwar"	)	{	lat_2=	27.5667	;	long_2	=	76.6167	;	}
+else if(citNameTo==	"Amalapuram"	)	{	lat_2=	16.5833	;	long_2	=	82.0167	;	}
+else if(citNameTo==	"Ambala"	)	{	lat_2=	30.3786	;	long_2	=	76.7725	;	}
+else if(citNameTo==	"Amravati"	)	{	lat_2=	20.9333	;	long_2	=	77.75	;	}
+else if(citNameTo==	"Amritsar"	)	{	lat_2=	31.6167	;	long_2	=	74.85	;	}
+else if(citNameTo==	"Amudalavalasa"	)	{	lat_2=	18.4167	;	long_2	=	83.9	;	}
+else if(citNameTo==	"Anakapalle"	)	{	lat_2=	17.68	;	long_2	=	83.02	;	}
+else if(citNameTo==	"Anantapur"	)	{	lat_2=	14.6833	;	long_2	=	77.6	;	}
+else if(citNameTo==	"Angamali"	)	{	lat_2=	10.196	;	long_2	=	76.386	;	}
+else if(citNameTo==	"Armur"	)	{	lat_2=	18.79	;	long_2	=	78.29	;	}
+else if(citNameTo==	"Asansol"	)	{	lat_2=	23.6833	;	long_2	=	86.9667	;	}
+else if(citNameTo==	"Aurangabad"	)	{	lat_2=	19.88	;	long_2	=	75.32	;	}
+else if(citNameTo==	"Aurangabad"	)	{	lat_2=	24.7704	;	long_2	=	84.38	;	}
+else if(citNameTo==	"Badvel"	)	{	lat_2=	14.75	;	long_2	=	79.05	;	}
+else if(citNameTo==	"Baharampur"	)	{	lat_2=	24.1	;	long_2	=	88.25	;	}
+else if(citNameTo==	"Bahraigh"	)	{	lat_2=	27.6204	;	long_2	=	81.6699	;	}
+else if(citNameTo==	"Baidyabati"	)	{	lat_2=	22.79	;	long_2	=	88.32	;	}
+else if(citNameTo==	"Bali"	)	{	lat_2=	22.65	;	long_2	=	88.34	;	}
+else if(citNameTo==	"Balurghat"	)	{	lat_2=	25.2167	;	long_2	=	88.7667	;	}
+else if(citNameTo==	"Bandipura"	)	{	lat_2=	34.4225	;	long_2	=	74.6375	;	}
+else if(citNameTo==	"Bangalore"	)	{	lat_2=	12.9699	;	long_2	=	77.598	;	}
+else if(citNameTo==	"Bangaon"	)	{	lat_2=	23.07	;	long_2	=	88.82	;	}
+else if(citNameTo==	"Bankura"	)	{	lat_2=	23.25	;	long_2	=	87.0667	;	}
+else if(citNameTo==	"Bansbaria"	)	{	lat_2=	22.97	;	long_2	=	88.4	;	}
+else if(citNameTo==	"Bapatla"	)	{	lat_2=	15.8889	;	long_2	=	80.47	;	}
+else if(citNameTo==	"Baramula"	)	{	lat_2=	34.2	;	long_2	=	74.34	;	}
+else if(citNameTo==	"Barasat"	)	{	lat_2=	22.2333	;	long_2	=	88.45	;	}
+else if(citNameTo==	"Barddhaman"	)	{	lat_2=	23.25	;	long_2	=	87.85	;	}
+else if(citNameTo==	"Bareilly"	)	{	lat_2=	28.364	;	long_2	=	79.415	;	}
+else if(citNameTo==	"Basirhat"	)	{	lat_2=	22.6572	;	long_2	=	88.8942	;	}
+else if(citNameTo==	"Begusarai"	)	{	lat_2=	25.42	;	long_2	=	86.13	;	}
+else if(citNameTo==	"Belampalli"	)	{	lat_2=	19.0558	;	long_2	=	79.4931	;	}
+else if(citNameTo==	"Belgaum"	)	{	lat_2=	15.8667	;	long_2	=	74.5	;	}
+else if(citNameTo==	"Bellary"	)	{	lat_2=	15.15	;	long_2	=	76.915	;	}
+else if(citNameTo==	"Bezwada"	)	{	lat_2=	16.5167	;	long_2	=	80.6167	;	}
+else if(citNameTo==	"Bhadreswar"	)	{	lat_2=	22.82	;	long_2	=	88.35	;	}
+else if(citNameTo==	"Bhagalpur"	)	{	lat_2=	25.25	;	long_2	=	87.0167	;	}
+else if(citNameTo==	"Bhainsa"	)	{	lat_2=	19.1	;	long_2	=	77.9667	;	}
+else if(citNameTo==	"Bharatpur"	)	{	lat_2=	27.2172	;	long_2	=	77.49	;	}
+else if(citNameTo==	"Bhatpara"	)	{	lat_2=	22.8667	;	long_2	=	88.4167	;	}
+else if(citNameTo==	"Bhavnagar"	)	{	lat_2=	21.765	;	long_2	=	72.1369	;	}
+else if(citNameTo==	"Bhayandar"	)	{	lat_2=	19.3	;	long_2	=	72.85	;	}
+else if(citNameTo==	"Bhilai"	)	{	lat_2=	21.2167	;	long_2	=	81.4333	;	}
+else if(citNameTo==	"Bhilwara"	)	{	lat_2=	25.35	;	long_2	=	74.6333	;	}
+else if(citNameTo==	"Bhimavaram"	)	{	lat_2=	16.5333	;	long_2	=	81.5333	;	}
+else if(citNameTo==	"Bhimunipatnam"	)	{	lat_2=	17.8864	;	long_2	=	83.4471	;	}
+else if(citNameTo==	"Bhiwandi"	)	{	lat_2=	19.3	;	long_2	=	73.0667	;	}
+else if(citNameTo==	"Bhiwani"	)	{	lat_2=	28.7833	;	long_2	=	76.1333	;	}
+else if(citNameTo==	"Bhopal"	)	{	lat_2=	23.25	;	long_2	=	77.4167	;	}
+else if(citNameTo==	"Bhubaneshwar"	)	{	lat_2=	20.2644	;	long_2	=	85.8281	;	}
+else if(citNameTo==	"Bhuj"	)	{	lat_2=	23.2504	;	long_2	=	69.81	;	}
+else if(citNameTo==	"Bhusaval"	)	{	lat_2=	21.02	;	long_2	=	75.83	;	}
+else if(citNameTo==	"Bidar"	)	{	lat_2=	17.9229	;	long_2	=	77.5175	;	}
+else if(citNameTo==	"Bijapur"	)	{	lat_2=	16.8244	;	long_2	=	75.7154	;	}
+else if(citNameTo==	"Bikaner"	)	{	lat_2=	28.0181	;	long_2	=	73.3169	;	}
+else if(citNameTo==	"Bilaspur"	)	{	lat_2=	22.15	;	long_2	=	82.0167	;	}
+else if(citNameTo==	"Bobbili"	)	{	lat_2=	18.5667	;	long_2	=	83.4167	;	}
+else if(citNameTo==	"Bodhan"	)	{	lat_2=	18.67	;	long_2	=	77.9	;	}
+else if(citNameTo==	"Bodupal"	)	{	lat_2=	17.4139	;	long_2	=	78.5783	;	}
+else if(citNameTo==	"Brahmapur"	)	{	lat_2=	19.32	;	long_2	=	84.8	;	}
+else if(citNameTo==	"Budaun"	)	{	lat_2=	28.03	;	long_2	=	79.09	;	}
+else if(citNameTo==	"Bulandshahr"	)	{	lat_2=	28.4104	;	long_2	=	77.8484	;	}
+else if(citNameTo==	"Burhanpur"	)	{	lat_2=	21.3004	;	long_2	=	76.13	;	}
+else if(citNameTo==	"Calicut"	)	{	lat_2=	11.25	;	long_2	=	75.7667	;	}
+else if(citNameTo==	"Cawnpore"	)	{	lat_2=	26.4725	;	long_2	=	80.3311	;	}
+else if(citNameTo==	"Chakradharpur"	)	{	lat_2=	22.7	;	long_2	=	85.63	;	}
+else if(citNameTo==	"Champdani"	)	{	lat_2=	22.8	;	long_2	=	88.37	;	}
+else if(citNameTo==	"Chanda"	)	{	lat_2=	19.95	;	long_2	=	79.3	;	}
+else if(citNameTo==	"Chandannagar"	)	{	lat_2=	22.8667	;	long_2	=	88.3833	;	}
+else if(citNameTo==	"Chandigarh"	)	{	lat_2=	30.7353	;	long_2	=	76.7911	;	}
+else if(citNameTo==	"Channarayapatna"	)	{	lat_2=	12.9	;	long_2	=	76.39	;	}
+else if(citNameTo==	"Chennai"	)	{	lat_2=	13.0825	;	long_2	=	80.275	;	}
+else if(citNameTo==	"Chicacole"	)	{	lat_2=	18.3	;	long_2	=	83.9	;	}
+else if(citNameTo==	"Chilakalurupet"	)	{	lat_2=	16.0892	;	long_2	=	80.1672	;	}
+else if(citNameTo==	"Chimakurti"	)	{	lat_2=	15.5819	;	long_2	=	79.868	;	}
+else if(citNameTo==	"Chinchvad"	)	{	lat_2=	18.6278	;	long_2	=	73.8131	;	}
+else if(citNameTo==	"Chirala"	)	{	lat_2=	15.82	;	long_2	=	80.35	;	}
+else if(citNameTo==	"Chittaurgarh"	)	{	lat_2=	24.8894	;	long_2	=	74.6239	;	}
+else if(citNameTo==	"Chittoor"	)	{	lat_2=	13.2	;	long_2	=	79.1167	;	}
+else if(citNameTo==	"Coimbatore"	)	{	lat_2=	11	;	long_2	=	76.9667	;	}
+else if(citNameTo==	"Conjeeveram"	)	{	lat_2=	12.8308	;	long_2	=	79.7078	;	}
+else if(citNameTo==	"Cuddalore"	)	{	lat_2=	11.75	;	long_2	=	79.75	;	}
+else if(citNameTo==	"Cuddapah"	)	{	lat_2=	14.4667	;	long_2	=	78.8167	;	}
+else if(citNameTo==	"Curchorem"	)	{	lat_2=	15.25	;	long_2	=	74.1	;	}
+else if(citNameTo==	"Cuttack"	)	{	lat_2=	20.45	;	long_2	=	85.8667	;	}
+else if(citNameTo==	"Dam Dam"	)	{	lat_2=	22.62	;	long_2	=	88.42	;	}
+else if(citNameTo==	"Daman"	)	{	lat_2=	20.417	;	long_2	=	72.85	;	}
+else if(citNameTo==	"Darjeeling"	)	{	lat_2=	27.0417	;	long_2	=	88.2631	;	}
+else if(citNameTo==	"Davangere"	)	{	lat_2=	14.4667	;	long_2	=	75.9167	;	}
+else if(citNameTo==	"Dehra Dun"	)	{	lat_2=	30.318	;	long_2	=	78.029	;	}
+else if(citNameTo==	"Delhi"	)	{	lat_2=	28.66	;	long_2	=	77.23	;	}
+else if(citNameTo==	"Deo"	)	{	lat_2=	24.6561	;	long_2	=	84.4356	;	}
+else if(citNameTo==	"Devarkonda"	)	{	lat_2=	16.7	;	long_2	=	78.9333	;	}
+else if(citNameTo==	"Dhanbad"	)	{	lat_2=	23.7928	;	long_2	=	86.435	;	}
+else if(citNameTo==	"Dharmavaram"	)	{	lat_2=	14.4142	;	long_2	=	77.715	;	}
+else if(citNameTo==	"Dholka"	)	{	lat_2=	22.72	;	long_2	=	72.47	;	}
+else if(citNameTo==	"Dhulia"	)	{	lat_2=	20.9	;	long_2	=	74.7833	;	}
+else if(citNameTo==	"Dibrugarh"	)	{	lat_2=	27.4833	;	long_2	=	95	;	}
+else if(citNameTo==	"Dindigul"	)	{	lat_2=	10.35	;	long_2	=	77.95	;	}
+else if(citNameTo==	"Dispur"	)	{	lat_2=	26.15	;	long_2	=	91.77	;	}
+else if(citNameTo==	"Diu"	)	{	lat_2=	20.7197	;	long_2	=	70.9904	;	}
+else if(citNameTo==	"Drug"	)	{	lat_2=	21.19	;	long_2	=	81.28	;	}
+else if(citNameTo==	"Durgapur"	)	{	lat_2=	23.55	;	long_2	=	87.32	;	}
+else if(citNameTo==	"Dwarka"	)	{	lat_2=	22.2403	;	long_2	=	68.9686	;	}
+else if(citNameTo==	"Ellore"	)	{	lat_2=	16.7	;	long_2	=	81.1	;	}
+else if(citNameTo==	"Emmiganur"	)	{	lat_2=	15.7333	;	long_2	=	77.4833	;	}
+else if(citNameTo==	"Erode"	)	{	lat_2=	11.3408	;	long_2	=	77.7172	;	}
+else if(citNameTo==	"Etawah"	)	{	lat_2=	26.7855	;	long_2	=	79.015	;	}
+else if(citNameTo==	"Faridabad"	)	{	lat_2=	28.4333	;	long_2	=	77.3167	;	}
+else if(citNameTo==	"Fatehpur"	)	{	lat_2=	25.8804	;	long_2	=	80.8	;	}
+else if(citNameTo==	"Fatehpur Sikri"	)	{	lat_2=	27.0911	;	long_2	=	77.6611	;	}
+else if(citNameTo==	"Firozabad"	)	{	lat_2=	27.15	;	long_2	=	78.3949	;	}
+else if(citNameTo==	"Fyzabad"	)	{	lat_2=	26.7504	;	long_2	=	82.17	;	}
+else if(citNameTo==	"Gadwal"	)	{	lat_2=	16.23	;	long_2	=	77.8	;	}
+else if(citNameTo==	"Gangtok"	)	{	lat_2=	27.33	;	long_2	=	88.62	;	}
+else if(citNameTo==	"Gauripur"	)	{	lat_2=	26.08	;	long_2	=	89.97	;	}
+else if(citNameTo==	"Gaya"	)	{	lat_2=	24.75	;	long_2	=	85.0167	;	}
+else if(citNameTo==	"Ghandinagar"	)	{	lat_2=	23.22	;	long_2	=	72.68	;	}
+else if(citNameTo==	"Ghaziabad"	)	{	lat_2=	28.6667	;	long_2	=	77.4167	;	}
+else if(citNameTo==	"Giddalur"	)	{	lat_2=	15.3784	;	long_2	=	78.9265	;	}
+else if(citNameTo==	"Godhra"	)	{	lat_2=	22.7755	;	long_2	=	73.6149	;	}
+else if(citNameTo==	"Gorakhpur"	)	{	lat_2=	26.7611	;	long_2	=	83.3667	;	}
+else if(citNameTo==	"Gudivada"	)	{	lat_2=	16.43	;	long_2	=	80.99	;	}
+else if(citNameTo==	"Gulbarga"	)	{	lat_2=	17.3333	;	long_2	=	76.8333	;	}
+else if(citNameTo==	"Guntakal"	)	{	lat_2=	15.17	;	long_2	=	77.38	;	}
+else if(citNameTo==	"Guntur"	)	{	lat_2=	16.3	;	long_2	=	80.45	;	}
+else if(citNameTo==	"Gurgaon"	)	{	lat_2=	28.45	;	long_2	=	77.02	;	}
+else if(citNameTo==	"Guwahati"	)	{	lat_2=	26.1667	;	long_2	=	91.7667	;	}
+else if(citNameTo==	"Gwalior"	)	{	lat_2=	26.215	;	long_2	=	78.1931	;	}
+else if(citNameTo==	"Habra"	)	{	lat_2=	22.83	;	long_2	=	88.63	;	}
+else if(citNameTo==	"Haldia"	)	{	lat_2=	22.0257	;	long_2	=	88.0583	;	}
+else if(citNameTo==	"Halisahar"	)	{	lat_2=	22.95	;	long_2	=	88.42	;	}
+else if(citNameTo==	"Handwara"	)	{	lat_2=	34.4	;	long_2	=	74.28	;	}
+else if(citNameTo==	"Haora"	)	{	lat_2=	22.59	;	long_2	=	88.31	;	}
+else if(citNameTo==	"Hapur"	)	{	lat_2=	28.7437	;	long_2	=	77.7628	;	}
+else if(citNameTo==	"Haripur"	)	{	lat_2=	31.52	;	long_2	=	75.98	;	}
+else if(citNameTo==	"Hassan"	)	{	lat_2=	13.005	;	long_2	=	76.1028	;	}
+else if(citNameTo==	"Hathras"	)	{	lat_2=	27.6	;	long_2	=	78.05	;	}
+else if(citNameTo==	"Hindupur"	)	{	lat_2=	13.83	;	long_2	=	77.49	;	}
+else if(citNameTo==	"Hisar"	)	{	lat_2=	29.1489	;	long_2	=	75.7367	;	}
+else if(citNameTo==	"Hospet"	)	{	lat_2=	15.2667	;	long_2	=	76.4	;	}
+else if(citNameTo==	"Hubli"	)	{	lat_2=	15.36	;	long_2	=	75.125	;	}
+else if(citNameTo==	"Hugli"	)	{	lat_2=	22.9	;	long_2	=	88.39	;	}
+else if(citNameTo==	"Hyderabad"	)	{	lat_2=	17.3667	;	long_2	=	78.4667	;	}
+else if(citNameTo==	"Ichalkaranji"	)	{	lat_2=	16.7	;	long_2	=	74.47	;	}
+else if(citNameTo==	"Imphal"	)	{	lat_2=	24.82	;	long_2	=	93.95	;	}
+else if(citNameTo==	"Indore"	)	{	lat_2=	22.7206	;	long_2	=	75.8472	;	}
+else if(citNameTo==	"Ingraj Bazar"	)	{	lat_2=	25	;	long_2	=	88.15	;	}
+else if(citNameTo==	"Itanagar"	)	{	lat_2=	27.1	;	long_2	=	93.62	;	}
+else if(citNameTo==	"Jabalpur"	)	{	lat_2=	23.1667	;	long_2	=	79.9333	;	}
+else if(citNameTo==	"Jaggayyapeta"	)	{	lat_2=	16.892	;	long_2	=	80.0976	;	}
+else if(citNameTo==	"Jagtial"	)	{	lat_2=	18.8	;	long_2	=	78.93	;	}
+else if(citNameTo==	"Jaipur"	)	{	lat_2=	26.9167	;	long_2	=	75.8667	;	}
+else if(citNameTo==	"Jaisalmer"	)	{	lat_2=	26.9167	;	long_2	=	70.9167	;	}
+else if(citNameTo==	"Jalandhar"	)	{	lat_2=	31.3256	;	long_2	=	75.5792	;	}
+else if(citNameTo==	"Jalgaon"	)	{	lat_2=	21.0167	;	long_2	=	75.5667	;	}
+else if(citNameTo==	"Jalor"	)	{	lat_2=	25.35	;	long_2	=	72.6167	;	}
+else if(citNameTo==	"Jalpaiguri"	)	{	lat_2=	26.5167	;	long_2	=	88.7333	;	}
+else if(citNameTo==	"Jammalamadugu"	)	{	lat_2=	14.85	;	long_2	=	78.38	;	}
+else if(citNameTo==	"Jammu"	)	{	lat_2=	32.7333	;	long_2	=	74.85	;	}
+else if(citNameTo==	"Jamnagar"	)	{	lat_2=	22.47	;	long_2	=	70.07	;	}
+else if(citNameTo==	"Jamshedpur"	)	{	lat_2=	22.8	;	long_2	=	86.1833	;	}
+else if(citNameTo==	"Jamuria"	)	{	lat_2=	23.7	;	long_2	=	87.08	;	}
+else if(citNameTo==	"Jangaon"	)	{	lat_2=	17.72	;	long_2	=	79.18	;	}
+else if(citNameTo==	"Jasdan"	)	{	lat_2=	22.03	;	long_2	=	71.2	;	}
+else if(citNameTo==	"Jatani"	)	{	lat_2=	20.17	;	long_2	=	85.7	;	}
+else if(citNameTo==	"Jaunpur"	)	{	lat_2=	25.7333	;	long_2	=	82.6833	;	}
+else if(citNameTo==	"Jaynagar-Majilpur"	)	{	lat_2=	22.1772	;	long_2	=	88.4258	;	}
+else if(citNameTo==	"Jhansi"	)	{	lat_2=	25.4486	;	long_2	=	78.5696	;	}
+else if(citNameTo==	"Jodhpur"	)	{	lat_2=	26.2918	;	long_2	=	73.0168	;	}
+else if(citNameTo==	"Jorhat"	)	{	lat_2=	26.75	;	long_2	=	94.2167	;	}
+else if(citNameTo==	"Junnar"	)	{	lat_2=	19.2	;	long_2	=	73.88	;	}
+else if(citNameTo==	"Kadiri"	)	{	lat_2=	14.12	;	long_2	=	78.17	;	}
+else if(citNameTo==	"Kagaznagar"	)	{	lat_2=	19.3316	;	long_2	=	79.4661	;	}
+else if(citNameTo==	"Kairana"	)	{	lat_2=	29.4	;	long_2	=	77.2	;	}
+else if(citNameTo==	"Kakinada"	)	{	lat_2=	16.9333	;	long_2	=	82.2167	;	}
+else if(citNameTo==	"Kalyan"	)	{	lat_2=	19.2502	;	long_2	=	73.1602	;	}
+else if(citNameTo==	"Kalyani"	)	{	lat_2=	22.975	;	long_2	=	88.4344	;	}
+else if(citNameTo==	"Kamareddipet"	)	{	lat_2=	18.3167	;	long_2	=	78.35	;	}
+else if(citNameTo==	"Kamarhati"	)	{	lat_2=	22.67	;	long_2	=	88.37	;	}
+else if(citNameTo==	"Kanchrapara"	)	{	lat_2=	22.97	;	long_2	=	88.43	;	}
+else if(citNameTo==	"Kandukur"	)	{	lat_2=	15.2165	;	long_2	=	79.9042	;	}
+else if(citNameTo==	"Karimnagar"	)	{	lat_2=	18.4333	;	long_2	=	79.15	;	}
+else if(citNameTo==	"Karnal"	)	{	lat_2=	29.6804	;	long_2	=	76.97	;	}
+else if(citNameTo==	"Karur"	)	{	lat_2=	10.9504	;	long_2	=	78.0833	;	}
+else if(citNameTo==	"Kavali"	)	{	lat_2=	14.9123	;	long_2	=	79.9944	;	}
+else if(citNameTo==	"Kavaratti"	)	{	lat_2=	10.5626	;	long_2	=	72.6369	;	}
+else if(citNameTo==	"Khajuraho"	)	{	lat_2=	24.85	;	long_2	=	79.9333	;	}
+else if(citNameTo==	"Khambhat"	)	{	lat_2=	22.3131	;	long_2	=	72.6194	;	}
+else if(citNameTo==	"Khammam"	)	{	lat_2=	17.25	;	long_2	=	80.15	;	}
+else if(citNameTo==	"Kharagpur"	)	{	lat_2=	22.3302	;	long_2	=	87.3237	;	}
+else if(citNameTo==	"Khardah"	)	{	lat_2=	22.72	;	long_2	=	88.38	;	}
+else if(citNameTo==	"Khed Brahma"	)	{	lat_2=	24.0299	;	long_2	=	73.0463	;	}
+else if(citNameTo==	"Kochi"	)	{	lat_2=	9.9667	;	long_2	=	76.2833	;	}
+else if(citNameTo==	"Kodaikanal"	)	{	lat_2=	10.23	;	long_2	=	77.48	;	}
+else if(citNameTo==	"Kohima"	)	{	lat_2=	25.6667	;	long_2	=	94.1194	;	}
+else if(citNameTo==	"Koilkuntla"	)	{	lat_2=	15.2333	;	long_2	=	78.3167	;	}
+else if(citNameTo==	"Kolar"	)	{	lat_2=	13.1333	;	long_2	=	78.1333	;	}
+else if(citNameTo==	"Kolhapur"	)	{	lat_2=	16.7	;	long_2	=	74.2333	;	}
+else if(citNameTo==	"Kolkata"	)	{	lat_2=	22.5411	;	long_2	=	88.3378	;	}
+else if(citNameTo==	"Koratla"	)	{	lat_2=	18.82	;	long_2	=	78.72	;	}
+else if(citNameTo==	"Kota"	)	{	lat_2=	25.18	;	long_2	=	75.83	;	}
+else if(citNameTo==	"Kothapet"	)	{	lat_2=	19.3333	;	long_2	=	79.4833	;	}
+else if(citNameTo==	"Kottagudem"	)	{	lat_2=	17.55	;	long_2	=	80.63	;	}
+else if(citNameTo==	"Kovvur"	)	{	lat_2=	17.0167	;	long_2	=	81.7333	;	}
+else if(citNameTo==	"Krishnanagar"	)	{	lat_2=	23.4	;	long_2	=	88.5	;	}
+else if(citNameTo==	"Kulgam"	)	{	lat_2=	33.64	;	long_2	=	75.02	;	}
+else if(citNameTo==	"Kulti"	)	{	lat_2=	23.73	;	long_2	=	86.85	;	}
+else if(citNameTo==	"Kumbakonam"	)	{	lat_2=	10.9805	;	long_2	=	79.4	;	}
+else if(citNameTo==	"Kurnool"	)	{	lat_2=	15.8222	;	long_2	=	78.035	;	}
+else if(citNameTo==	"Latur"	)	{	lat_2=	18.4004	;	long_2	=	76.57	;	}
+else if(citNameTo==	"Lucknow"	)	{	lat_2=	26.847	;	long_2	=	80.947	;	}
+else if(citNameTo==	"Ludhiana"	)	{	lat_2=	30.9083	;	long_2	=	75.8486	;	}
+else if(citNameTo==	"Macherla"	)	{	lat_2=	16.48	;	long_2	=	79.43	;	}
+else if(citNameTo==	"Machilipatnam"	)	{	lat_2=	16.1667	;	long_2	=	81.1333	;	}
+else if(citNameTo==	"Madanapalle"	)	{	lat_2=	13.55	;	long_2	=	78.5	;	}
+else if(citNameTo==	"Madhyamgram"	)	{	lat_2=	22.7	;	long_2	=	88.45	;	}
+else if(citNameTo==	"Madurai"	)	{	lat_2=	9.9197	;	long_2	=	78.1194	;	}
+else if(citNameTo==	"Mahbubnagar"	)	{	lat_2=	16.7333	;	long_2	=	77.9833	;	}
+else if(citNameTo==	"Mahesana"	)	{	lat_2=	23.6	;	long_2	=	72.4	;	}
+else if(citNameTo==	"Maihar"	)	{	lat_2=	24.27	;	long_2	=	80.75	;	}
+else if(citNameTo==	"Malaut"	)	{	lat_2=	30.19	;	long_2	=	74.499	;	}
+else if(citNameTo==	"Malegaon"	)	{	lat_2=	20.55	;	long_2	=	74.55	;	}
+else if(citNameTo==	"Mancheral"	)	{	lat_2=	18.8679	;	long_2	=	79.4639	;	}
+else if(citNameTo==	"Mandamari"	)	{	lat_2=	18.9822	;	long_2	=	79.4811	;	}
+else if(citNameTo==	"Mandapeta"	)	{	lat_2=	16.87	;	long_2	=	81.93	;	}
+else if(citNameTo==	"Mandsaur"	)	{	lat_2=	24.03	;	long_2	=	75.08	;	}
+else if(citNameTo==	"Mandya"	)	{	lat_2=	12.5242	;	long_2	=	76.8958	;	}
+else if(citNameTo==	"Mangalagiri"	)	{	lat_2=	16.43	;	long_2	=	80.55	;	}
+else if(citNameTo==	"Mangalore"	)	{	lat_2=	12.8703	;	long_2	=	74.8806	;	}
+else if(citNameTo==	"Mangur"	)	{	lat_2=	17.9373	;	long_2	=	80.8185	;	}
+else if(citNameTo==	"Markapur"	)	{	lat_2=	15.735	;	long_2	=	79.27	;	}
+else if(citNameTo==	"Mathura"	)	{	lat_2=	27.4833	;	long_2	=	77.6833	;	}
+else if(citNameTo==	"Mauli"	)	{	lat_2=	30.7194	;	long_2	=	76.7181	;	}
+else if(citNameTo==	"Medinipur"	)	{	lat_2=	22.4333	;	long_2	=	87.3333	;	}
+else if(citNameTo==	"Meerut"	)	{	lat_2=	28.99	;	long_2	=	77.7	;	}
+else if(citNameTo==	"Metpalli"	)	{	lat_2=	18.8297	;	long_2	=	78.5878	;	}
+else if(citNameTo==	"Mirzapur"	)	{	lat_2=	25.15	;	long_2	=	82.58	;	}
+else if(citNameTo==	"Moradabad"	)	{	lat_2=	28.8418	;	long_2	=	78.7568	;	}
+else if(citNameTo==	"Mumbai"	)	{	lat_2=	18.9667	;	long_2	=	72.8333	;	}
+else if(citNameTo==	"Muzaffarnagar"	)	{	lat_2=	29.4708	;	long_2	=	77.7033	;	}
+else if(citNameTo==	"Muzaffarpur"	)	{	lat_2=	26.12	;	long_2	=	85.3833	;	}
+else if(citNameTo==	"Mysore"	)	{	lat_2=	12.3086	;	long_2	=	76.6531	;	}
+else if(citNameTo==	"Nagari"	)	{	lat_2=	13.33	;	long_2	=	79.58	;	}
+else if(citNameTo==	"Nagercoil"	)	{	lat_2=	8.17	;	long_2	=	77.43	;	}
+else if(citNameTo==	"Nagpur"	)	{	lat_2=	21.1539	;	long_2	=	79.0831	;	}
+else if(citNameTo==	"Naihati"	)	{	lat_2=	22.9	;	long_2	=	88.42	;	}
+else if(citNameTo==	"Naini Tal"	)	{	lat_2=	29.3919	;	long_2	=	79.4542	;	}
+else if(citNameTo==	"Nalgonda"	)	{	lat_2=	17.05	;	long_2	=	79.27	;	}
+else if(citNameTo==	"Nanded"	)	{	lat_2=	19.15	;	long_2	=	77.3333	;	}
+else if(citNameTo==	"Nandod"	)	{	lat_2=	21.8704	;	long_2	=	73.5026	;	}
+else if(citNameTo==	"Nandyal"	)	{	lat_2=	15.48	;	long_2	=	78.48	;	}
+else if(citNameTo==	"Narasannapeta"	)	{	lat_2=	18.4151	;	long_2	=	84.0447	;	}
+else if(citNameTo==	"Narasapur"	)	{	lat_2=	16.4333	;	long_2	=	81.6833	;	}
+else if(citNameTo==	"Narasaraopet"	)	{	lat_2=	16.236	;	long_2	=	80.054	;	}
+else if(citNameTo==	"Nasik"	)	{	lat_2=	20	;	long_2	=	73.7833	;	}
+else if(citNameTo==	"Navadwip"	)	{	lat_2=	23.4088	;	long_2	=	88.3657	;	}
+else if(citNameTo==	"Navsari"	)	{	lat_2=	20.8504	;	long_2	=	72.92	;	}
+else if(citNameTo==	"Negapatam"	)	{	lat_2=	10.7667	;	long_2	=	79.8333	;	}
+else if(citNameTo==	"Nellore"	)	{	lat_2=	14.4333	;	long_2	=	79.9667	;	}
+else if(citNameTo==	"New Delhi"	)	{	lat_2=	28.7	;	long_2	=	77.2	;	}
+else if(citNameTo==	"Nidadavole"	)	{	lat_2=	16.92	;	long_2	=	81.67	;	}
+else if(citNameTo==	"Nizamabad"	)	{	lat_2=	18.6704	;	long_2	=	78.1	;	}
+else if(citNameTo==	"Ongole"	)	{	lat_2=	15.5	;	long_2	=	80.05	;	}
+else if(citNameTo==	"Ootacamund"	)	{	lat_2=	11.4086	;	long_2	=	76.6939	;	}
+else if(citNameTo==	"Osmanabad"	)	{	lat_2=	18.1667	;	long_2	=	76.05	;	}
+else if(citNameTo==	"Palakollu"	)	{	lat_2=	16.5333	;	long_2	=	81.7333	;	}
+else if(citNameTo==	"Palghat"	)	{	lat_2=	10.7792	;	long_2	=	76.6547	;	}
+else if(citNameTo==	"Pali"	)	{	lat_2=	25.7725	;	long_2	=	73.3233	;	}
+else if(citNameTo==	"Palmaner"	)	{	lat_2=	13.2	;	long_2	=	78.75	;	}
+else if(citNameTo==	"Paloncha"	)	{	lat_2=	17.5815	;	long_2	=	80.6765	;	}
+else if(citNameTo==	"Pamidi"	)	{	lat_2=	14.95	;	long_2	=	77.5833	;	}
+else if(citNameTo==	"Panaji"	)	{	lat_2=	15.48	;	long_2	=	73.83	;	}
+else if(citNameTo==	"Panchkula"	)	{	lat_2=	30.6915	;	long_2	=	76.8537	;	}
+else if(citNameTo==	"Panihati"	)	{	lat_2=	22.69	;	long_2	=	88.37	;	}
+else if(citNameTo==	"Panipat"	)	{	lat_2=	29.4004	;	long_2	=	76.97	;	}
+else if(citNameTo==	"Parbhani"	)	{	lat_2=	19.2704	;	long_2	=	76.76	;	}
+else if(citNameTo==	"Pathanamthitta"	)	{	lat_2=	9.2647	;	long_2	=	76.7872	;	}
+else if(citNameTo==	"Pathankot"	)	{	lat_2=	32.2689	;	long_2	=	75.6497	;	}
+else if(citNameTo==	"Patiala"	)	{	lat_2=	30.3204	;	long_2	=	76.385	;	}
+else if(citNameTo==	"Patna"	)	{	lat_2=	25.61	;	long_2	=	85.1414	;	}
+else if(citNameTo==	"Pedana"	)	{	lat_2=	16.2667	;	long_2	=	81.1667	;	}
+else if(citNameTo==	"Pilibhit"	)	{	lat_2=	28.64	;	long_2	=	79.81	;	}
+else if(citNameTo==	"Pithapuram"	)	{	lat_2=	17.1167	;	long_2	=	82.2667	;	}
+else if(citNameTo==	"Ponnuru"	)	{	lat_2=	16.0667	;	long_2	=	80.5667	;	}
+else if(citNameTo==	"Porbandar"	)	{	lat_2=	21.6425	;	long_2	=	69.6047	;	}
+else if(citNameTo==	"Port Blair"	)	{	lat_2=	11.6667	;	long_2	=	92.75	;	}
+else if(citNameTo==	"Proddatur"	)	{	lat_2=	14.73	;	long_2	=	78.55	;	}
+else if(citNameTo==	"Puducherry"	)	{	lat_2=	11.93	;	long_2	=	79.83	;	}
+else if(citNameTo==	"Pulivendla"	)	{	lat_2=	14.4167	;	long_2	=	78.2333	;	}
+else if(citNameTo==	"Pune"	)	{	lat_2=	18.5196	;	long_2	=	73.8553	;	}
+else if(citNameTo==	"Punganuru"	)	{	lat_2=	13.3667	;	long_2	=	78.5833	;	}
+else if(citNameTo==	"Puri"	)	{	lat_2=	19.8	;	long_2	=	85.8167	;	}
+else if(citNameTo==	"Purnea"	)	{	lat_2=	25.78	;	long_2	=	87.47	;	}
+else if(citNameTo==	"Puttur"	)	{	lat_2=	13.45	;	long_2	=	79.55	;	}
+else if(citNameTo==	"Quilon"	)	{	lat_2=	8.8853	;	long_2	=	76.5864	;	}
+else if(citNameTo==	"Raichur"	)	{	lat_2=	16.2104	;	long_2	=	77.355	;	}
+else if(citNameTo==	"Raiganj"	)	{	lat_2=	25.6167	;	long_2	=	88.1167	;	}
+else if(citNameTo==	"Raipur"	)	{	lat_2=	21.2379	;	long_2	=	81.6337	;	}
+else if(citNameTo==	"Rajahmundry"	)	{	lat_2=	16.9833	;	long_2	=	81.7833	;	}
+else if(citNameTo==	"Rajaori"	)	{	lat_2=	33.38	;	long_2	=	74.3	;	}
+else if(citNameTo==	"Rajapalaiyam"	)	{	lat_2=	9.4204	;	long_2	=	77.58	;	}
+else if(citNameTo==	"Rajgir"	)	{	lat_2=	25.03	;	long_2	=	85.42	;	}
+else if(citNameTo==	"Rajkot"	)	{	lat_2=	22.2969	;	long_2	=	70.7984	;	}
+else if(citNameTo==	"Rameswaram"	)	{	lat_2=	9.28	;	long_2	=	79.3	;	}
+else if(citNameTo==	"Ramgundam"	)	{	lat_2=	18.8	;	long_2	=	79.45	;	}
+else if(citNameTo==	"Rampur"	)	{	lat_2=	28.8154	;	long_2	=	79.025	;	}
+else if(citNameTo==	"Ranchi"	)	{	lat_2=	23.3556	;	long_2	=	85.3347	;	}
+else if(citNameTo==	"Ratlam"	)	{	lat_2=	23.3167	;	long_2	=	75.0667	;	}
+else if(citNameTo==	"Raurkela"	)	{	lat_2=	22.2492	;	long_2	=	84.8828	;	}
+else if(citNameTo==	"Rayachoti"	)	{	lat_2=	14.05	;	long_2	=	78.75	;	}
+else if(citNameTo==	"Repalle"	)	{	lat_2=	16.02	;	long_2	=	80.85	;	}
+else if(citNameTo==	"Rishra"	)	{	lat_2=	22.71	;	long_2	=	88.35	;	}
+else if(citNameTo==	"Rohtak"	)	{	lat_2=	28.9	;	long_2	=	76.5667	;	}
+else if(citNameTo==	"Saharanpur"	)	{	lat_2=	29.964	;	long_2	=	77.546	;	}
+else if(citNameTo==	"Saharsa"	)	{	lat_2=	25.88	;	long_2	=	86.6	;	}
+else if(citNameTo==	"Salem"	)	{	lat_2=	11.65	;	long_2	=	78.1667	;	}
+else if(citNameTo==	"Samalkot"	)	{	lat_2=	17.0531	;	long_2	=	82.1695	;	}
+else if(citNameTo==	"Sambalpur"	)	{	lat_2=	21.4704	;	long_2	=	83.9701	;	}
+else if(citNameTo==	"Sambhal"	)	{	lat_2=	28.58	;	long_2	=	78.55	;	}
+else if(citNameTo==	"Sangli"	)	{	lat_2=	16.8667	;	long_2	=	74.5667	;	}
+else if(citNameTo==	"Sannai"	)	{	lat_2=	24.16	;	long_2	=	80.83	;	}
+else if(citNameTo==	"Sattenapalle"	)	{	lat_2=	16.3962	;	long_2	=	80.1497	;	}
+else if(citNameTo==	"Saugor"	)	{	lat_2=	23.8504	;	long_2	=	78.75	;	}
+else if(citNameTo==	"Secunderabad"	)	{	lat_2=	17.45	;	long_2	=	78.5	;	}
+else if(citNameTo==	"Shahjanpur"	)	{	lat_2=	27.8804	;	long_2	=	79.905	;	}
+else if(citNameTo==	"Shantipur"	)	{	lat_2=	23.25	;	long_2	=	88.43	;	}
+else if(citNameTo==	"Shiliguri"	)	{	lat_2=	26.72	;	long_2	=	88.42	;	}
+else if(citNameTo==	"Shillong"	)	{	lat_2=	25.5744	;	long_2	=	91.8789	;	}
+else if(citNameTo==	"Shimla"	)	{	lat_2=	31.1033	;	long_2	=	77.1722	;	}
+else if(citNameTo==	"Shimoga"	)	{	lat_2=	13.9304	;	long_2	=	75.56	;	}
+else if(citNameTo==	"Shrirampur"	)	{	lat_2=	22.75	;	long_2	=	88.34	;	}
+else if(citNameTo==	"Shrirangapattana"	)	{	lat_2=	12.4181	;	long_2	=	76.6947	;	}
+else if(citNameTo==	"Sihor"	)	{	lat_2=	21.7	;	long_2	=	71.97	;	}
+else if(citNameTo==	"Sikar"	)	{	lat_2=	27.6119	;	long_2	=	75.1397	;	}
+else if(citNameTo==	"Silchar"	)	{	lat_2=	24.7904	;	long_2	=	92.79	;	}
+else if(citNameTo==	"Silvassa"	)	{	lat_2=	20.2666	;	long_2	=	73.0166	;	}
+else if(citNameTo==	"Sirsa"	)	{	lat_2=	29.4904	;	long_2	=	75.03	;	}
+else if(citNameTo==	"Sirsilla"	)	{	lat_2=	18.38	;	long_2	=	78.83	;	}
+else if(citNameTo==	"Sitalpur"	)	{	lat_2=	27.63	;	long_2	=	80.75	;	}
+else if(citNameTo==	"Solan"	)	{	lat_2=	30.92	;	long_2	=	77.12	;	}
+else if(citNameTo==	"Solapur"	)	{	lat_2=	17.6833	;	long_2	=	75.9167	;	}
+else if(citNameTo==	"Sonipat"	)	{	lat_2=	28.9958	;	long_2	=	77.0114	;	}
+else if(citNameTo==	"Sopur"	)	{	lat_2=	34.3	;	long_2	=	74.47	;	}
+else if(citNameTo==	"Srinagar"	)	{	lat_2=	34.0911	;	long_2	=	74.8061	;	}
+else if(citNameTo==	"Surat"	)	{	lat_2=	21.17	;	long_2	=	72.83	;	}
+else if(citNameTo==	"Suriapet"	)	{	lat_2=	17.15	;	long_2	=	79.6167	;	}
+else if(citNameTo==	"Tadepalle"	)	{	lat_2=	16.4667	;	long_2	=	80.6	;	}
+else if(citNameTo==	"Tadepallegudem"	)	{	lat_2=	16.8333	;	long_2	=	81.5	;	}
+else if(citNameTo==	"Tadpatri"	)	{	lat_2=	14.92	;	long_2	=	78.02	;	}
+else if(citNameTo==	"Tanjore"	)	{	lat_2=	10.8	;	long_2	=	79.15	;	}
+else if(citNameTo==	"Tanuku"	)	{	lat_2=	16.75	;	long_2	=	81.7	;	}
+else if(citNameTo==	"Tenali"	)	{	lat_2=	16.243	;	long_2	=	80.64	;	}
+else if(citNameTo==	"Tezpur"	)	{	lat_2=	26.6338	;	long_2	=	92.8	;	}
+else if(citNameTo==	"Thane"	)	{	lat_2=	19.18	;	long_2	=	72.9633	;	}
+else if(citNameTo==	"Thiruvananthapuram"	)	{	lat_2=	8.5	;	long_2	=	76.8997	;	}
+else if(citNameTo==	"Tinnevelly"	)	{	lat_2=	8.7289	;	long_2	=	77.7081	;	}
+else if(citNameTo==	"Tirupati"	)	{	lat_2=	13.65	;	long_2	=	79.42	;	}
+else if(citNameTo==	"Tiruppur"	)	{	lat_2=	11.1075	;	long_2	=	77.3398	;	}
+else if(citNameTo==	"Tiruvannamalai"	)	{	lat_2=	12.2604	;	long_2	=	79.1	;	}
+else if(citNameTo==	"Titagarh"	)	{	lat_2=	22.74	;	long_2	=	88.37	;	}
+else if(citNameTo==	"Tonk"	)	{	lat_2=	26.1505	;	long_2	=	75.79	;	}
+else if(citNameTo==	"Trichinopoly"	)	{	lat_2=	10.8269	;	long_2	=	78.6928	;	}
+else if(citNameTo==	"Trichur"	)	{	lat_2=	10.52	;	long_2	=	76.21	;	}
+else if(citNameTo==	"Tumkur"	)	{	lat_2=	13.33	;	long_2	=	77.1	;	}
+else if(citNameTo==	"Tuni"	)	{	lat_2=	17.35	;	long_2	=	82.55	;	}
+else if(citNameTo==	"Tuticorin"	)	{	lat_2=	8.7833	;	long_2	=	78.1333	;	}
+else if(citNameTo==	"Udaipur"	)	{	lat_2=	24.5833	;	long_2	=	73.6833	;	}
+else if(citNameTo==	"Udhampur"	)	{	lat_2=	32.93	;	long_2	=	75.13	;	}
+else if(citNameTo==	"Udipi"	)	{	lat_2=	13.3322	;	long_2	=	74.7461	;	}
+else if(citNameTo==	"Ujjain"	)	{	lat_2=	23.1828	;	long_2	=	75.7772	;	}
+else if(citNameTo==	"Ulhasnagar"	)	{	lat_2=	19.2167	;	long_2	=	73.15	;	}
+else if(citNameTo==	"Uluberiya"	)	{	lat_2=	22.47	;	long_2	=	88.11	;	}
+else if(citNameTo==	"Umaria"	)	{	lat_2=	23.5245	;	long_2	=	80.8365	;	}
+else if(citNameTo==	"Uran"	)	{	lat_2=	18.89	;	long_2	=	72.95	;	}
+else if(citNameTo==	"Vadodara"	)	{	lat_2=	22.3	;	long_2	=	73.2	;	}
+else if(citNameTo==	"Valparai"	)	{	lat_2=	10.3204	;	long_2	=	76.97	;	}
+else if(citNameTo==	"Varanasi"	)	{	lat_2=	25.3189	;	long_2	=	83.0128	;	}
+else if(citNameTo==	"Vellore"	)	{	lat_2=	12.9204	;	long_2	=	79.15	;	}
+else if(citNameTo==	"Venkatagiri"	)	{	lat_2=	13.9667	;	long_2	=	79.5833	;	}
+else if(citNameTo==	"Vidisha"	)	{	lat_2=	23.5239	;	long_2	=	77.8061	;	}
+else if(citNameTo==	"Vikarabad"	)	{	lat_2=	17.33	;	long_2	=	77.9	;	}
+else if(citNameTo==	"Vinukonda"	)	{	lat_2=	16.05	;	long_2	=	79.75	;	}
+else if(citNameTo==	"Vishakhapatnam"	)	{	lat_2=	17.7333	;	long_2	=	83.3167	;	}
+else if(citNameTo==	"Vizianagaram"	)	{	lat_2=	18.1167	;	long_2	=	83.4167	;	}
+else if(citNameTo==	"Vrindavan"	)	{	lat_2=	27.5806	;	long_2	=	77.7006	;	}
+else if(citNameTo==	"Wanparti"	)	{	lat_2=	16.361	;	long_2	=	78.0627	;	}
+else if(citNameTo==	"Warangal"	)	{	lat_2=	17.9756	;	long_2	=	79.6011	;	}
+else if(citNameTo==	"Yavatmal"	)	{	lat_2=	20.4	;	long_2	=	78.1333	;	}
+else if(citNameTo==	"Yellandu"	)	{	lat_2=	17.6	;	long_2	=	80.33	;	}
+
+
+
+p = 0.017453292519943295;
+c = Math.cos;
+a = 0.5 - c((lat_2 - lat_1) * p) / 2 + (c(lat_1 * p) * c(lat_2 * p) * (1 - c((long_2 - long_1) * p))) / 2;
+ans = 12742 * Math.asin(Math.sqrt(a));
+ans += 60;
+
+d = ans;
+document.getElementById("firstAmt").innerHTML = d.toFixed(0) + " km";
+
+/*For 14s Tempo*/
+var drivAllow; 
+var drivAllow1;
+if(d<=300){
+drivAllow=300*25;
+document.getElementById("tc14").innerHTML = drivAllow.toFixed(0) + "/-";
+var gst = (drivAllow/100)*18;
+document.getElementById("gst14").innerHTML = gst.toFixed(0) + "/-";
+var totalAmt =  gst + drivAllow + 300 + 500;
+document.getElementById("total14").innerHTML = totalAmt.toFixed(0) + "/-";
+
+}
+
+
+else{
+var totTravelAmt = d.toFixed(0) * 25;
+document.getElementById("tc14").innerHTML = totTravelAmt.toFixed(0) + "/-";
+var gst = (totTravelAmt/100)*18;
+document.getElementById("gst14").innerHTML = gst.toFixed(0) + "/-";
+var totalAmt =  totTravelAmt + gst + 300 + 500;
+document.getElementById("total14").innerHTML = totalAmt.toFixed(0) + "/-";
+    }
+
+/*For 17s Tempo*/
+var drivAllow; 
+var drivAllow1;
+if(d<=300){
+drivAllow=300*27;
+document.getElementById("tc17").innerHTML = drivAllow.toFixed(0) + "/-";
+var gst = (drivAllow/100)*18;
+document.getElementById("gst17").innerHTML = gst.toFixed(0) + "/-";
+var totalAmt =  gst + drivAllow + 300 + 500;
+document.getElementById("total17").innerHTML = totalAmt.toFixed(0) + "/-";
+
+}
+
+
+else{
+var totTravelAmt = d.toFixed(0) * 27;
+document.getElementById("tc17").innerHTML = totTravelAmt.toFixed(0) + "/-";
+var gst = (totTravelAmt/100)*18;
+document.getElementById("gst17").innerHTML = gst.toFixed(0) + "/-";
+var totalAmt =  totTravelAmt + gst + 300 + 500;
+document.getElementById("total17").innerHTML = totalAmt.toFixed(0) + "/-";
+    }
+/*For 20s Tempo*/
+var drivAllow; 
+var drivAllow1;
+if(d<=300){
+drivAllow=300*30;
+driveAllow1=300*35;
+document.getElementById("tc20").innerHTML = drivAllow.toFixed(0) + "/- to " + driveAllow1.toFixed(0) + "/-";
+var gst = (drivAllow/100)*18;
+var gst1 = (driveAllow1/100)*18; 
+document.getElementById("gst20").innerHTML = gst.toFixed(0) + "/- to " + gst.toFixed(0) + "/-";
+var totalAmt =  gst + drivAllow + 300 + 500;
+var totalAmt1 = gst1 + driveAllow1 + 300 + 500; 
+document.getElementById("total20").innerHTML = totalAmt.toFixed(0) + "/- to " + totalAmt1.toFixed(0) + "/-";
+
+}
+
+
+else{
+var totTravelAmt = d.toFixed(0) * 30;
+var totTravelAmt1 = d.toFixed(0) * 35;
+document.getElementById("tc20").innerHTML = totTravelAmt.toFixed(0) + "/- to " + totTravelAmt1.toFixed(0) + "/-";
+var gst = (totTravelAmt/100)*18;
+var gst1 = (totTravelAmt1/100)*18;
+document.getElementById("gst20").innerHTML = gst.toFixed(0) + "/- to " + gst1.toFixed(0) + "/-";
+var totalAmt =  totTravelAmt + gst + 300 + 500;
+var totalAmt1 = gst1 + totTravelAmt1 + 300 + 500; 
+document.getElementById("total20").innerHTML = totalAmt.toFixed(0) + "/- to " + totalAmt1.toFixed(0) + "/-";
+    }
+
+    /*For 20s MiniBus*/
+var drivAllow; 
+var drivAllow1;
+if(d<=300){
+drivAllow=300*30;
+driveAllow1=300*32;
+document.getElementById("tc20mb").innerHTML = drivAllow.toFixed(0) + "/- to " + driveAllow1.toFixed(0) + "/-";
+var gst = (drivAllow/100)*18;
+var gst1 = (driveAllow1/100)*18; 
+document.getElementById("gst20mb").innerHTML = gst.toFixed(0) + "/- to " + gst.toFixed(0) + "/-";
+var totalAmt =  gst + drivAllow + 300 + 500;
+var totalAmt1 = gst1 + driveAllow1 + 300 + 500; 
+document.getElementById("total20mb").innerHTML = totalAmt.toFixed(0) + "/- to " + totalAmt1.toFixed(0) + "/-";
+
+}
+
+
+else{
+var totTravelAmt = d.toFixed(0) * 30;
+var totTravelAmt1 = d.toFixed(0) * 32;
+document.getElementById("tc20mb").innerHTML = totTravelAmt.toFixed(0) + "/- to " + totTravelAmt1.toFixed(0) + "/-";
+var gst = (totTravelAmt/100)*18;
+var gst1 = (totTravelAmt1/100)*18;
+document.getElementById("gst20mb").innerHTML = gst.toFixed(0) + "/- to " + gst1.toFixed(0) + "/-";
+var totalAmt =  totTravelAmt + gst + 300 + 500;
+var totalAmt1 = gst1 + totTravelAmt1 + 300 + 500; 
+document.getElementById("total20mb").innerHTML = totalAmt.toFixed(0) + "/- to " + totalAmt1.toFixed(0) + "/-";
+    }
+
+        /*For 25s MiniBus*/
+var drivAllow; 
+var drivAllow1;
+if(d<=300){
+drivAllow=300*35;
+driveAllow1=300*37;
+document.getElementById("tc25").innerHTML = drivAllow.toFixed(0) + "/- to " + driveAllow1.toFixed(0) + "/-";
+var gst = (drivAllow/100)*18;
+var gst1 = (driveAllow1/100)*18; 
+document.getElementById("gst25").innerHTML = gst.toFixed(0) + "/- to " + gst.toFixed(0) + "/-";
+var totalAmt =  gst + drivAllow + 300 + 500;
+var totalAmt1 = gst1 + driveAllow1 + 300 + 500; 
+document.getElementById("total25").innerHTML = totalAmt.toFixed(0) + "/- to " + totalAmt1.toFixed(0) + "/-";
+
+}
+
+
+else{
+var totTravelAmt = d.toFixed(0) * 35;
+var totTravelAmt1 = d.toFixed(0) * 37;
+document.getElementById("tc25").innerHTML = totTravelAmt.toFixed(0) + "/- to " + totTravelAmt1.toFixed(0) + "/-";
+var gst = (totTravelAmt/100)*18;
+var gst1 = (totTravelAmt1/100)*18;
+document.getElementById("gst25").innerHTML = gst.toFixed(0) + "/- to " + gst1.toFixed(0) + "/-";
+var totalAmt =  totTravelAmt + gst + 300 + 500;
+var totalAmt1 = gst1 + totTravelAmt1 + 300 + 500; 
+document.getElementById("total25").innerHTML = totalAmt.toFixed(0) + "/- to " + totalAmt1.toFixed(0) + "/-";
+    }
+        /*For 27s MiniBus*/
+        var drivAllow; 
+var drivAllow1;
+if(d<=300){
+drivAllow=300*37;
+driveAllow1=300*39;
+document.getElementById("tc27").innerHTML = drivAllow.toFixed(0) + "/- to " + driveAllow1.toFixed(0) + "/-";
+var gst = (drivAllow/100)*18;
+var gst1 = (driveAllow1/100)*18; 
+document.getElementById("gst27").innerHTML = gst.toFixed(0) + "/- to " + gst.toFixed(0) + "/-";
+var totalAmt =  gst + drivAllow + 300 + 500;
+var totalAmt1 = gst1 + driveAllow1 + 300 + 500; 
+document.getElementById("total27").innerHTML = totalAmt.toFixed(0) + "/- to " + totalAmt1.toFixed(0) + "/-";
+
+}
+
+
+else{
+var totTravelAmt = d.toFixed(0) * 37;
+var totTravelAmt1 = d.toFixed(0) * 39;
+document.getElementById("tc27").innerHTML = totTravelAmt.toFixed(0) + "/- to " + totTravelAmt1.toFixed(0) + "/-";
+var gst = (totTravelAmt/100)*18;
+var gst1 = (totTravelAmt1/100)*18;
+document.getElementById("gst27").innerHTML = gst.toFixed(0) + "/- to " + gst1.toFixed(0) + "/-";
+var totalAmt =  totTravelAmt + gst + 300 + 500;
+var totalAmt1 = gst1 + totTravelAmt1 + 300 + 500; 
+document.getElementById("total27").innerHTML = totalAmt.toFixed(0) + "/- to " + totalAmt1.toFixed(0) + "/-";
+    }
+
+        /*For 29s MiniBus*/
+        var drivAllow; 
+var drivAllow1;
+if(d<=300){
+drivAllow=300*40;
+driveAllow1=300*42;
+document.getElementById("tc29").innerHTML = drivAllow.toFixed(0) + "/- to " + driveAllow1.toFixed(0) + "/-";
+var gst = (drivAllow/100)*18;
+var gst1 = (driveAllow1/100)*18; 
+document.getElementById("gst29").innerHTML = gst.toFixed(0) + "/- to " + gst.toFixed(0) + "/-";
+var totalAmt =  gst + drivAllow + 300 + 500;
+var totalAmt1 = gst1 + driveAllow1 + 300 + 500; 
+document.getElementById("total29").innerHTML = totalAmt.toFixed(0) + "/- to " + totalAmt1.toFixed(0) + "/-";
+
+}
+
+
+else{
+var totTravelAmt = d.toFixed(0) * 40;
+var totTravelAmt1 = d.toFixed(0) * 42;
+document.getElementById("tc29").innerHTML = totTravelAmt.toFixed(0) + "/- to " + totTravelAmt1.toFixed(0) + "/-";
+var gst = (totTravelAmt/100)*18;
+var gst1 = (totTravelAmt1/100)*18;
+document.getElementById("gst29").innerHTML = gst.toFixed(0) + "/- to " + gst1.toFixed(0) + "/-";
+var totalAmt =  totTravelAmt + gst + 300 + 500;
+var totalAmt1 = gst1 + totTravelAmt1 + 300 + 500; 
+document.getElementById("total29").innerHTML = totalAmt.toFixed(0) + "/- to " + totalAmt1.toFixed(0) + "/-";
+    }
+        /*For 41s Bus*/
+        var drivAllow; 
+var drivAllow1;
+if(d<=300){
+drivAllow=300*44;
+driveAllow1=300*54;
+document.getElementById("tc41").innerHTML = drivAllow.toFixed(0) + "/- to " + driveAllow1.toFixed(0) + "/-";
+var gst = (drivAllow/100)*18;
+var gst1 = (driveAllow1/100)*18; 
+document.getElementById("gst41").innerHTML = gst.toFixed(0) + "/- to " + gst.toFixed(0) + "/-";
+var totalAmt =  gst + drivAllow + 300 + 500;
+var totalAmt1 = gst1 + driveAllow1 + 300 + 500; 
+document.getElementById("total41").innerHTML = totalAmt.toFixed(0) + "/- to " + totalAmt1.toFixed(0) + "/-";
+
+}
+
+
+else{
+var totTravelAmt = d.toFixed(0) * 44;
+var totTravelAmt1 = d.toFixed(0) * 54;
+document.getElementById("tc41").innerHTML = totTravelAmt.toFixed(0) + "/- to " + totTravelAmt1.toFixed(0) + "/-";
+var gst = (totTravelAmt/100)*18;
+var gst1 = (totTravelAmt1/100)*18;
+document.getElementById("gst41").innerHTML = gst.toFixed(0) + "/- to " + gst1.toFixed(0) + "/-";
+var totalAmt =  totTravelAmt + gst + 300 + 500;
+var totalAmt1 = gst1 + totTravelAmt1 + 300 + 500; 
+document.getElementById("total41").innerHTML = totalAmt.toFixed(0) + "/- to " + totalAmt1.toFixed(0) + "/-";
+    }
+        /*For 56s Bus*/
+        var drivAllow; 
+var drivAllow1;
+if(d<=300){
+drivAllow=300*42;
+driveAllow1=300*52;
+document.getElementById("tc56").innerHTML = drivAllow.toFixed(0) + "/- to " + driveAllow1.toFixed(0) + "/-";
+var gst = (drivAllow/100)*18;
+var gst1 = (driveAllow1/100)*18; 
+document.getElementById("gst56").innerHTML = gst.toFixed(0) + "/- to " + gst.toFixed(0) + "/-";
+var totalAmt =  gst + drivAllow + 300 + 500;
+var totalAmt1 = gst1 + driveAllow1 + 300 + 500; 
+document.getElementById("total56").innerHTML = totalAmt.toFixed(0) + "/- to " + totalAmt1.toFixed(0) + "/-";
+
+}
+
+
+else{
+var totTravelAmt = d.toFixed(0) * 42;
+var totTravelAmt1 = d.toFixed(0) * 52;
+document.getElementById("tc56").innerHTML = totTravelAmt.toFixed(0) + "/- to " + totTravelAmt1.toFixed(0) + "/-";
+var gst = (totTravelAmt/100)*18;
+var gst1 = (totTravelAmt1/100)*18;
+document.getElementById("gst56").innerHTML = gst.toFixed(0) + "/- to " + gst1.toFixed(0) + "/-";
+var totalAmt =  totTravelAmt + gst + 300 + 500;
+var totalAmt1 = gst1 + totTravelAmt1 + 300 + 500; 
+document.getElementById("total56").innerHTML = totalAmt.toFixed(0) + "/- to " + totalAmt1.toFixed(0) + "/-";
+    }
+
+
+}
+
+  
+
+
+
+
+</script>
+<script>
+
+</script>
+  <script src="https://kit.fontawesome.com/b80b7dd1be.js" crossorigin="anonymous"></script>
+</body>
+</html>
